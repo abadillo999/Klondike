@@ -9,6 +9,7 @@
 #define MODELS_WASTE_H_
 #include "Queue.h"
 #include "Card.h"
+#include "Stack.h"
 
 namespace Models {
 
@@ -24,13 +25,13 @@ public:
 
 	Card *getFromBack();
 
-    bool canSetCard(Card& card);
-	bool canTakeCard();
+    bool canSetCard(Card* card);
+	bool canGetCard();
 
-    void setCard(Card& card);
-    Card& getTopCard();
-	Card& getCardValue();
-	std::list<Card &> getVisibleCards();
+    void setCard(Card* card);
+    Card* getTopCard();
+	Card* getCardValue();
+	std::list<Card *> getCards();
     bool isFull();
 };
 

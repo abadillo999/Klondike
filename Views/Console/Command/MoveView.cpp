@@ -16,7 +16,8 @@ MoveView::MoveView() {
 }
 
 void MoveView::interact(Controllers::MoveController& controller){
-
+    Utils::IO &io = Utils::IO::getInstance();
+    io.write("cabesa");
 }
 }
 } /* namespace Views */

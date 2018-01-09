@@ -11,18 +11,18 @@
 namespace Models {
 
 	Pile::Pile(int maxNum): MAX_NUM_CARDS(maxNum){
-
+		queue = new Models::Queue();
 	}
 
     Pile::~Pile() {
 
     }
 
-	bool Pile::canSetCard(Card& card) {
-			if(queue->isEmpty() && card.getNumber() == MAX_NUM_CARDS) {
+	bool Pile::canSetCard(Card* card) {
+			if(queue->isEmpty() && card->getNumber() == MAX_NUM_CARDS) {
 				return true;
-			}else if (queue->getCardFront().getColor() != card.getColor()){
-				if (queue->getCardFront().getNumber() == card.getNumber()+1){
+			}else if (queue->getCardFront()->getColor() != card->getColor()){
+				if (queue->getCardFront()->getNumber() == card->getNumber()+1){
 					return true;
 				}else{
 					return false;
@@ -32,24 +32,24 @@ namespace Models {
 			}
 		}
 
-	void Pile::setCard(Card& card){
+	void Pile::setCard(Card* card){
 		queue->setCardFront(card);
 	}
 
 
-	bool Pile::canTakeCard(){
+	bool Pile::canGetCard(){
 		return true;
 	}
 
-	std::list<Card &> Pile::getVisibleCards(){
-		return queue->getVisibleCards();
+	std::list<Card *> Pile::getCards(){
+		return queue->getCards();
 	}
 
-	Card &Pile::getTopCard() {
+	Card *Pile::getTopCard() {
 		return queue->getCardFront();
 	}
 
-	Card &Pile::getCardValue() {
+	Card *Pile::getCardValue() {
 		return queue->show();
 	}
 

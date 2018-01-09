@@ -9,33 +9,31 @@
 
 namespace Controllers{
 
-CommandMenu::CommandMenu(Controllers::CommandBroker& broker): broker(broker) {
-	moveCommand = new Controllers::MoveController("Move");
-	flipCommand = new Controllers::FlipController("Flip");
-	redoCommand = new Controllers::RedoController("Redo");
-	undoCommand = new Controllers::UndoController("Undo");
-	exitCommand = new Controllers::ExitController("Exit");
+CommandMenu::CommandMenu(Models::Game& game, Controllers::CommandBroker& broker): broker(broker) {
+	moveCommand = new Controllers::MoveController(game, "Move");
+	flipCommand = new Controllers::FlipController(game, "Flip");
+	redoCommand = new Controllers::RedoController(game, "Redo");
+	undoCommand = new Controllers::UndoController(game, "Undo");
+	exitCommand = new Controllers::ExitController(game, "Exit");
 
 
 
 }
 
 void CommandMenu::updateCommands(){
-	availableCommandList.clear();
-	int i = 0;
-	availableCommandList[i]= moveCommand;
-	i++;
-	availableCommandList[i]= flipCommand;
-	i++;
+
+	availableCommandList = 	std::vector<Controllers::CommandController*>();
+
+	availableCommandList.push_back(moveCommand);
+
+	availableCommandList.push_back(flipCommand);
 	if(broker.canUndo()){
-	availableCommandList[i]= undoCommand;
-	i++;
+	availableCommandList.push_back(undoCommand);
 	}
 	if(broker.canDo()){
-	availableCommandList[i]= redoCommand;
-	i++;
+	availableCommandList.push_back(redoCommand);
 	}
-	availableCommandList[i]= exitCommand;
+	availableCommandList.push_back(exitCommand);
 
 }
 
@@ -45,7 +43,7 @@ int CommandMenu::writeMenu(){
 
 	this->updateCommands();
 	for (int i= 0; i < availableCommandList.size(); i++){
-		io.write(i+"-"+availableCommandList[i]->getTitle());
+		io.write(std::to_string(i+1)+" - "+availableCommandList[i]->getTitle());
 	}
 
 
@@ -53,7 +51,7 @@ int CommandMenu::writeMenu(){
 }
 
 Controllers::CommandController* CommandMenu::get(int option){
-	return availableCommandList[option]->clone();
+	return availableCommandList[option-1]->clone();
 
 }
 

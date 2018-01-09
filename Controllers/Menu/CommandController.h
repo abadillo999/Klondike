@@ -8,23 +8,25 @@
 #ifndef COMMANDCONTROLLER_H_
 #define COMMANDCONTROLLER_H_
 #include "MenuControllerVisitor.h"
+#include "../Controller.h"
+#include "../../Models/Game.h"
 #include <string>
 #include "../../Models/States.h"
 
 namespace Controllers {
 class CommandBroker;
 
-class CommandController {
+class CommandController: public Controller {
 protected:
 	std::string title;
 
 public:
-	CommandController();
+	CommandController(Models::Game& game);
 	virtual ~CommandController();
 
 	virtual CommandController* clone()=0;
 
-	virtual void accept(MenuControllerVisitor& menuControllerVisitor)=0;
+	virtual void accept(MenuControllerVisitor* menuControllerVisitor)=0;
 
 	std::string getTitle();
 

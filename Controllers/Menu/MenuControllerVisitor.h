@@ -18,11 +18,10 @@ class ExitController;
 
 class MenuControllerVisitor {
 public:
-	virtual void visit(Controllers::MoveController &moveController) = 0;
-	virtual void visit(Controllers::FlipController &flipController) = 0;
-	virtual void visit(Controllers::UndoController &undoController) = 0;
-	virtual void visit(Controllers::RedoController &redoController) = 0;
-	virtual void visit(Controllers::ExitController &endController) = 0;
+	virtual void visit(Controllers::MoveController *moveController) = 0;
+	virtual void visit(Controllers::FlipController *flipController) = 0;
+	virtual void visit(Controllers::UndoController *undoController) = 0;
+	virtual void visit(Controllers::RedoController *redoController) = 0;
 };
 
 } /* namespace Controllers */

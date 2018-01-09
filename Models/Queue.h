@@ -20,7 +20,7 @@ namespace Models {
 
 class Queue {
 private:
-	std::deque<Card*> stack;
+	std::deque<Models::Card*> stack;
 
 public:
 	Queue();
@@ -33,7 +33,7 @@ public:
 	void setCardFront(Card* card);
 	int getSize() const;
 	bool isEmpty();
-	std::list<Card *> getVisibleCards();
+	std::list<Card *> getCards();
 };
 
 } /* namespace Models */

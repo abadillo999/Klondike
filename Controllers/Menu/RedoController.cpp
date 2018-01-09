@@ -9,7 +9,7 @@
 
 namespace Controllers {
 
-RedoController::RedoController(std::string title){
+RedoController::RedoController(Models::Game& game, std::string title): CommandController(game){
 	this->title = title;
 }
 RedoController::~RedoController(){
@@ -17,11 +17,11 @@ RedoController::~RedoController(){
 }
 
 RedoController* RedoController::clone(){
-	return new RedoController(this->getTitle());
+	return new RedoController(Controllers::Controller::game, this->getTitle());
 }
 
-void RedoController::accept(MenuControllerVisitor& menuControllerVisitor){
-	menuControllerVisitor.visit(*this);
+void RedoController::accept(MenuControllerVisitor* menuControllerVisitor){
+	menuControllerVisitor->visit(this);
 }
 
 void RedoController::visitBroker(Controllers::CommandBroker& broker){

@@ -7,18 +7,18 @@
 namespace Models {
 
     Foundation::Foundation(int maxNum) :MAX_NUM_CARDS(maxNum){
-        // TODO Auto-generated constructor stub
-
+        queue = new Models::Queue();
     }
+
     Foundation::~Foundation() {
 
     }
 
-    bool Foundation::canSetCard(Card& card) {
-        if(queue->isEmpty() && card.getNumber() == 1) {
+    bool Foundation::canSetCard(Card* card) {
+        if(queue->isEmpty() && card->getNumber() == 1) {
             return true;
-        }else if (queue->getCardFront().getSuit() == card.getSuit()){
-            if (queue->getCardFront().getNumber() == card.getNumber() +1){
+        }else if (queue->getCardFront()->getSuit() == card->getSuit()){
+            if (queue->getCardFront()->getNumber() == card->getNumber() +1){
                 return true;
             }else{
                 return false;
@@ -27,11 +27,11 @@ namespace Models {
             return false;
         }
     }
-    void Foundation::setCard(Card& card){
+    void Foundation::setCard(Card* card){
         queue->setCardFront(card);
     }
 
-    Card& Foundation::getCardValue(){
+    Card* Foundation::getCardValue(){
         return queue->show();
     }
 
@@ -43,16 +43,16 @@ namespace Models {
         }
     }
 
-    bool Foundation::canTakeCard(){
+    bool Foundation::canGetCard(){
         return false;
     }
 
-    Card& Foundation::getTopCard() {
+    Card* Foundation::getTopCard() {
         return queue->getCardFront();
     }
 
-    std::list<Card &> Foundation::getVisibleCards(){
-        return queue->getVisibleCards();
+    std::list<Card *> Foundation::getCards(){
+        return queue->getCards();
 
     }
 

@@ -11,7 +11,7 @@
 namespace Models {
 
     Waste::Waste() {
-	// TODO Auto-generated constructor stub
+        queue = new Models::Queue();
     }
 
     Waste::~Waste() {
@@ -35,28 +35,28 @@ namespace Models {
         return aux;
     }
 
-    bool Waste::canTakeCard(){
+    bool Waste::canGetCard(){
         return !queue->isEmpty();
     }
 
-    std::list<Card &> Waste::getVisibleCards(){
-        return queue->getVisibleCards();
+    std::list<Card *> Waste::getCards(){
+        return queue->getCards();
     }
 
-	Card &Waste::getCardValue() {
+	Card *Waste::getCardValue() {
         return queue->show();
 	};
 
-    bool Waste::canSetCard(Card& card){
+    bool Waste::canSetCard(Card* card){
         return false;
     }
 
-    void Waste::setCard(Card &card) {
+    void Waste::setCard(Card* card) {
         queue->setCardFront(card);
 
     }
 
-    Card &Waste::getTopCard() {
+    Card *Waste::getTopCard() {
         return queue->getCardFront();
     }
 

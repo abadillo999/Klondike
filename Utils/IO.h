@@ -15,17 +15,18 @@ namespace Utils {
 
 class IO {
 private:
-	IO();
-	static IO* instance;
+    IO();
+    static IO* instance;
 
 public:
-	static IO& getInstance();
+    static IO& getInstance();
+    virtual ~IO() = default;
 
-	virtual ~IO() = default;
+    int readInt();
+    std::string readString();
+    void write(std::string output);
+    void writeInt(int num);
 
-	int readInt();
-	std::string readString();
-	void write(std::string output);
 };
 
 } /* namespace Utils */

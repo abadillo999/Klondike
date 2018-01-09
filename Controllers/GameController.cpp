@@ -10,7 +10,7 @@
 namespace Controllers {
 
 GameController::GameController(Models::Game& game): Controllers::OperationController(game) {
-
+    menuController = new Controllers::MenuController(game);
 
 
 }

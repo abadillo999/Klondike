@@ -6,6 +6,7 @@
  */
 
 #include "Game.h"
+#include "../Utils/IO.h"
 
 namespace Models {
 
@@ -17,11 +18,16 @@ Game::~Game() {
 	// TODO Auto-generated destructor stub
 }
 void Game::init(){
-    if (deck != nullptr || board != nullptr)
-		deleteCurrentGame();
+    Utils::IO &io = Utils::IO::getInstance();
+
+
     deck->init();
+
     board = new Board(deck, MAX_NUM_CARDS);
+    state = Models::States::IN_GAME;
+
 }
+
 void Game::deleteCurrentGame(){
     delete deck;
     deck = nullptr;
@@ -41,16 +47,18 @@ void Game::deleteCurrentGame(){
         return state;
 }
 
+    void Game::moveCard(int origin, int destination){
+        board->move(origin, destination);
+    }
 
-void Game::moveCard(int origin, int destination){
-	board->move(origin, destination);
+    Stack* Game::getStack(int position) {
+        return board->getStack(position);
+    }
 
-}
-Stack* Game::getStack(int position) {
-	return board->getStack(position);
-}
+    int Game::getNumStacks() {
+        return board->getNumStacks();
 
-
+    }
 
 
 }

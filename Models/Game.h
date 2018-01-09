@@ -30,6 +30,8 @@ public:
 	void moveCard(int origin, int destination);
 	Stack* getStack(int position);
 
+    int getNumStacks();
+
 private:
     void deleteCurrentGame();
 	Models::States state = Models::States::START;

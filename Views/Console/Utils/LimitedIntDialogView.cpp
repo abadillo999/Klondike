@@ -25,10 +25,9 @@ int LimitedIntDialogView::read(){
 	Utils::IO &io = Utils::IO::getInstance();
 	int result;
 	do{
-		result = io.readInt();
-
-	}while(result >= min && result <=max);
-
+        this->write();
+        result = io.readInt();
+	}while(!(min <= result && max >= result));
 	return result;
 
 

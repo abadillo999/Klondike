@@ -9,7 +9,7 @@
 
 namespace Controllers {
 
-UndoController::UndoController(std::string title){
+UndoController::UndoController(Models::Game& game, std::string title): CommandController(game){
 	this->title = title;
 }
 
@@ -18,11 +18,11 @@ UndoController::~UndoController(){
 }
 
 UndoController* UndoController::clone(){
-	return new UndoController(title);
+	return new UndoController(Controllers::Controller::game, this->title);
 }
 
-void UndoController::accept(MenuControllerVisitor& menuControllerVisitor){
-	menuControllerVisitor.visit(*this);
+void UndoController::accept(MenuControllerVisitor* menuControllerVisitor){
+	menuControllerVisitor->visit(this);
 }
 
 

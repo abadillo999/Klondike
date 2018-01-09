@@ -20,4 +20,8 @@ void StartController::accept(OperationControllerVisitor &operationControllerVisi
 	operationControllerVisitor.visit(*this);
 
 }
+
+	void StartController::init() {
+		Controller::init();
+	}
 } /* namespace Controllers */

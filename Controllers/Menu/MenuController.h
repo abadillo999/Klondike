@@ -17,11 +17,12 @@ namespace Controllers {
 
 class MenuController  {
 private:
+	Models::Game game;
 	Controllers::CommandBroker broker;
 	Controllers::CommandMenu *menu;
 
 public:
-	MenuController();
+	MenuController(Models::Game& game);
 	virtual ~MenuController();
 
 	int writeMenu();

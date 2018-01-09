@@ -7,6 +7,7 @@
 
 #ifndef MODELS_STATES_H_
 #define MODELS_STATES_H_
+
 namespace Models{
 	enum class States{
 		UNDEFINED,

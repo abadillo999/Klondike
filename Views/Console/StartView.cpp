@@ -20,7 +20,11 @@ StartView::~StartView() {
 	// TODO Auto-generated destructor stub
 }
 void StartView::interact(Controllers::StartController& startController){
+    Utils::IO &io = Utils::IO::getInstance();
+    io.write("Loading...");
     startController.init();
+    io.write("Loaded");
+
 
 }
 

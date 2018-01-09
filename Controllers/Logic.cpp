@@ -10,6 +10,7 @@
 namespace Controllers {
 
 Logic::Logic() {
+
 	   this->gameControllers[Models::States::START] = new Controllers::StartController(game);
 	   this->gameControllers[Models::States::IN_GAME] = new Controllers::GameController(game);
 	   this->gameControllers[Models::States::END] = new Controllers::EndController(game);

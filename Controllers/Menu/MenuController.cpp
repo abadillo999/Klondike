@@ -9,9 +9,9 @@
 
 namespace Controllers {
 
-MenuController::MenuController() {
+MenuController::MenuController(Models::Game& game): game(game){
 		broker = Controllers::CommandBroker();
-		menu = new Controllers::CommandMenu(broker);
+		menu = new Controllers::CommandMenu(game, broker);
 
 }
 MenuController:: ~MenuController(){

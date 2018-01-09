@@ -8,6 +8,7 @@
 #ifndef VIEWS_CONSOLE_STARTVIEW_H_
 #define VIEWS_CONSOLE_STARTVIEW_H_
 #include "../../Controllers/StartController.h"
+#include "../../Utils/IO.h"
 
 namespace Views {
 namespace Console{

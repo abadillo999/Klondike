@@ -15,19 +15,21 @@
 namespace Controllers {
 
 class Controller {
-private:
+protected:
 	Models::Game& game;
-public:
-	Controller(Models::Game& game);
-	virtual ~Controller() ;
-
-
 	void init();
 	bool checkKlondike() const;
 	void setState(Models::States);
 	void moveCard(int Origin, int Destination);
 	Models::Stack* getStack(int position);
 	Models::States getState();
+
+public:
+	Controller(Models::Game& game);
+	virtual ~Controller() ;
+
+
+
 
 
 };

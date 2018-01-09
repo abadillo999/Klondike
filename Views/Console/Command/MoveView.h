@@ -9,6 +9,7 @@
 #define MOVEVIEW_H_
 
 #include "../../../Controllers/Menu/MoveController.h"
+#include "../../../Utils/IO.h"
 
 namespace Views {
 namespace Console{

@@ -6,10 +6,12 @@
  */
 
 #include "MoveController.h"
+#include "../../Utils/IO.h"
+#include <assert.h>
 
 namespace Controllers {
 
-MoveController::MoveController(std::string title){
+MoveController::MoveController(Models::Game& game, std::string title): CommandController(game){
 	this->title = title;
 }
 MoveController::~MoveController(){
@@ -17,35 +19,44 @@ MoveController::~MoveController(){
 }
 
 MoveController* MoveController::clone(){
-	return new MoveController(this->getTitle());
+	return new MoveController(Controllers::Controller::game, this->getTitle());
 }
 
 
-void MoveController::accept(MenuControllerVisitor& menuControllerVisitor) {
-	menuControllerVisitor.visit(*this);
+void MoveController::accept(MenuControllerVisitor* menuControllerVisitor) {
+    assert(&menuControllerVisitor);
+    Utils::IO &io = Utils::IO::getInstance();
+    io.write("move");
+    menuControllerVisitor->visit(new MoveController(Controllers::Controller::game, this->getTitle()));
+    io.write("moved");
+
 }
 
 void MoveController::visitBroker(Controllers::CommandBroker& broker){
+    Utils::IO &io = Utils::IO::getInstance();
+    io.write("move to broker");
 	broker.setCommand(this);
 }
 
 bool MoveController::canTakeCard(int position){
-
+    return true;
 }
 
 bool MoveController::canMoveCardTo(int Origin, int destination){
+    return true;
 
 }
-void MoveController::setMove(int Origin, int destination){
-
+void MoveController::setMove(int Origin, int Destination){
+    this->origin = Origin;
+    this->destination = Destination;
 }
 
 void MoveController::execute(){
-  //controller.moveCard(origin, destination);
+  game.moveCard(origin, destination);
 }
 
 void MoveController::undo(){
-  //controller.moveCard(destination, origin);
+  game.moveCard(destination, origin);
 }
 
 

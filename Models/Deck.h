@@ -9,14 +9,16 @@
 #include "Suits.h"
 #include "Card.h"
 #include "Queue.h"
+#include <string>
 
 namespace Models {
 
     class Deck {
 
-    private:
-        int MAX_NUM_CARDS;
+    protected:
+        int MAX_NUM_CARDS = 0;
         int NUM_TO_DRAW = 3;
+        std::string maString= "fd";
         Queue* queue;
 
 
@@ -26,7 +28,7 @@ namespace Models {
         Deck(int maxNum);
         void init();
         void shuffle();
-        Card& getCard();
+        Card* getCard();
         Queue* getCards();
         int getSize() const;
         bool isEmpty();

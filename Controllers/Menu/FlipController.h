@@ -7,20 +7,20 @@
 
 #ifndef FLIPCONTROLLER_H_
 #define FLIPCONTROLLER_H_
-#include "MenuControllerVisitor.h"
 #include "CommandController.h"
 #include "../Command/CommandBroker.h"
+#include "../../Models/Game.h"
 
 namespace Controllers {
 
 class FlipController: public CommandController {
 public:
-	FlipController(std::string title);
+	FlipController(Models::Game& game, std::string title);
 	virtual ~FlipController();
 
 	FlipController* clone();
 
-	void accept(MenuControllerVisitor& menuControllerVisitor);
+	void accept(MenuControllerVisitor* menuControllerVisitor);
 
 	void visitBroker(Controllers::CommandBroker& broker);
 

@@ -20,13 +20,13 @@ namespace Models {
         virtual ~Foundation();
         bool isFull();
 
-        bool canSetCard(Card& card);
-        bool canTakeCard();
+        bool canSetCard(Card* card);
+        bool canGetCard();
 
-        void setCard(Card& card);
-        Card& getTopCard();
-        Card& getCardValue();
-        std::list<Card &> getVisibleCards();
+        void setCard(Card* card);
+        Card* getTopCard();
+        Card* getCardValue();
+        std::list<Card *> getCards();
 
     };
 

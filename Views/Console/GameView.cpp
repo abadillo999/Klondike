@@ -10,7 +10,7 @@
 namespace Views {
 namespace Console{
 GameView::GameView() {
-	// TODO Auto-generated constructor stub
+    menuView = new Views::Console::MenuView();
 
 }
 
@@ -18,7 +18,6 @@ GameView::~GameView() {
 	// TODO Auto-generated destructor stub
 }
 void GameView::interact(Controllers::GameController& gameController){
-
 	menuView->interact(*gameController.getMenuController());
 
 

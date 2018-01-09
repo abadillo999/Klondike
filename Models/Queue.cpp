@@ -6,19 +6,22 @@
  */
 
 #include "Queue.h"
-
+using namespace std;
 namespace Models {
 
 
 Queue::Queue() {
 	// TODO Auto-generated constructor stub
 
+
+
+
 }
 void Queue::shuffle() {
 		std::random_shuffle(stack.begin(), stack.end());
 	}
 Card* Queue::show(){
-           return stack.front();
+    return  stack.front();
 }
 
 Card* Queue::getCardFront() {
@@ -34,7 +37,8 @@ Card* Queue::getCardBack() {
 		}
 
 void Queue::setCardBack(Card* card){
-	stack.push_back(card);
+	this->stack.push_back(card);
+
 }
 
 void Queue::setCardFront(Card* card){
@@ -49,13 +53,15 @@ bool Queue::isEmpty() {
 			return stack.empty();
 		}
 
-std::list<Card *> Queue::getVisibleCards(){
+std::list<Card *> Queue::getCards(){
 		std::list<Card*> result;
 		for (int i = 0; i < stack.size(); ++i) {
-			if (stack.at(i)->isVisible()){
 				result.push_back(stack.at(i));
-			}
 		}
 		return result;
 	}
+
+    Queue::~Queue() {
+
+    }
 } /* namespace Models */

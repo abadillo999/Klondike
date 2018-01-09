@@ -7,20 +7,20 @@
 
 #ifndef UNDOCONTROLLER_H_
 #define UNDOCONTROLLER_H_
-#include "MenuControllerVisitor.h"
 #include "CommandController.h"
 #include "../Command/CommandBroker.h"
+#include "../../Models/Game.h"
 
 namespace Controllers {
 
 class UndoController:public CommandController {
 public:
-	UndoController(std::string title);
+	UndoController(Models::Game& game, std::string title);
 	virtual ~UndoController();
 
 	UndoController* clone();
 
-	void accept(MenuControllerVisitor& menuControllerVisitor);
+	void accept(MenuControllerVisitor* menuControllerVisitor);
 
 	void visitBroker(Controllers::CommandBroker& broker);
 

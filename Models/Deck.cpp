@@ -6,27 +6,26 @@
 
 namespace Models {
 
-    Deck::Deck(int maxNum): MAX_NUM_CARDS(maxNum) {
+    Deck::Deck(int maxNum) {
+        this->MAX_NUM_CARDS = maxNum;
+        queue = new Queue();
     }
+
     void Deck::init(){
-            Models::Card aux = *new Card();
-            for( int a = 1; a <= MAX_NUM_CARDS; a++ ) {
-                aux.set(Models::Suit::HEART, a);
-                queue->setCardBack(aux);
-                aux.set(Models::Suit::DIAMOND, a);
-                queue->setCardBack(aux);
-                aux.set(Models::Suit::CLUB, a);
-                queue->setCardBack(aux);
-                aux.set(Models::Suit::SPADE, a);
-                queue->setCardBack(aux);
+
+        for( int a = 1; a <= this->MAX_NUM_CARDS; a++ ) {
+            queue->setCardBack(new Card(Models::Suit::HEART, a));
+            queue->setCardBack(new Card(Models::Suit::DIAMOND, a));
+            queue->setCardBack(new Card(Models::Suit::CLUB, a));
+            queue->setCardBack(new Card(Models::Suit::SPADE, a));
             }
-            queue->shuffle();
+        queue->shuffle();
     }
 
     void Deck::shuffle() {
         queue->shuffle();
     }
-    Card& Deck::getCard() {
+    Card* Deck::getCard() {
         return queue->getCardBack();
     }
 

@@ -1,4 +1,5 @@
 #include "CommandBroker.h"
+#include "../../Utils/IO.h"
 
 namespace Controllers {
 
@@ -16,6 +17,8 @@ bool CommandBroker::canDo(){
 
 
 void CommandBroker::setCommand(Controllers::MoveController* command){
+	Utils::IO &io = Utils::IO::getInstance();
+    io.write("broooker");
 	command->execute();
 	doneCommandList[pointer] = command;
 	pointer++;

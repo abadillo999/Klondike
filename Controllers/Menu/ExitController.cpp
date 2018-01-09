@@ -9,7 +9,7 @@
 
 namespace Controllers {
 
-ExitController::ExitController(std::string title){
+ExitController::ExitController(Models::Game& game, std::string title): CommandController(game){
 	this->title = title;
 }
 ExitController::~ExitController(){
@@ -21,7 +21,7 @@ ExitController* ExitController::clone(){
 }
 
 
-void ExitController::accept(MenuControllerVisitor& menuControllerVisitor) {
+void ExitController::accept(MenuControllerVisitor* menuControllerVisitor) {
 }
 
 void ExitController::visitBroker(Controllers::CommandBroker& broker){

@@ -10,8 +10,8 @@
 using namespace std;
 
 #include "Klondike.h"
-#include "Controllers/Logic.h"
 #include "Views/Console/ConsoleView.h"
+#include <deque>
 
 
 
@@ -23,6 +23,6 @@ int main() {
 	cout << "!!!Welcome to Klondike!!!" << endl;
 
 	Klondike kondike(*new Views::Console::ConsoleView(), *new Controllers::Logic());
-	//(kondike.start();
+	kondike.start();
 	return 0;
 }

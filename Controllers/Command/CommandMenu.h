@@ -9,6 +9,7 @@
 #define COMMANDMENU_H_
 #include <vector>
 #include "../../Utils/IO.h"
+#include "../../Models/Game.h"
 #include "CommandBroker.h"
 #include "../Menu/CommandController.h"
 #include "../Menu/MoveController.h"
@@ -36,7 +37,7 @@ protected:
 
 
 public:
-	CommandMenu(Controllers::CommandBroker& broker);
+	CommandMenu(Models::Game& game, Controllers::CommandBroker& broker);
 	virtual ~CommandMenu() = default;
 
 	int writeMenu();

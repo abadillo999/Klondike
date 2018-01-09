@@ -23,6 +23,8 @@ namespace Models {
         Stack* getStack(int position);;
         void move(int origin, int destination);
 
+        int getNumStacks();
+
     private:
         Deck* deck;
         std::vector<Stack*> stacks;

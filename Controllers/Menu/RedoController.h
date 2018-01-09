@@ -7,20 +7,20 @@
 
 #ifndef REDOCONTROLLER_H_
 #define REDOCONTROLLER_H_
-#include "MenuControllerVisitor.h"
 #include "CommandController.h"
 #include "../Command/CommandBroker.h"
+#include "../../Models/Game.h"
 
 namespace Controllers {
 
 class RedoController: public CommandController {
 public:
-	RedoController(std::string title);
+	RedoController(Models::Game& game, std::string title);
 	virtual ~RedoController();
 
 	RedoController* clone();
 
-	void accept(MenuControllerVisitor& menuControllerVisitor);
+	void accept(MenuControllerVisitor* menuControllerVisitor);
 
 	void visitBroker(Controllers::CommandBroker& broker);
 

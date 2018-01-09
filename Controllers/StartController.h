@@ -17,6 +17,8 @@ class StartController: public Controllers::OperationController {
 public:
 	StartController(Models::Game& game);
 	void accept(OperationControllerVisitor &operationControllerVisitor);
+
+	void init();
 };
 
 } /* namespace Controllers */

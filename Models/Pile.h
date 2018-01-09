@@ -9,6 +9,7 @@
 #define MODELS_PILE_H_
 #include "Queue.h"
 #include "Card.h"
+#include "Stack.h"
 
 
 namespace Models{
@@ -20,13 +21,13 @@ private:
 public:
 	Pile(int maxNum);
     virtual ~Pile();
-	bool canSetCard(Card& card);
-	void setCard(Card& card);
-	Card& getTopCard();
-	Card& getCardValue();
+	bool canSetCard(Card* card);
+	void setCard(Card* card);
+	Card* getTopCard();
+	Card* getCardValue();
 
-	bool canTakeCard();
-	std::list<Card &> getVisibleCards();
+	bool canGetCard();
+	std::list<Card *> getCards();
     bool isFull();
 
 };

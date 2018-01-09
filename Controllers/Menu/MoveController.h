@@ -7,9 +7,9 @@
 
 #ifndef MOVECONTROLLER_H_
 #define MOVECONTROLLER_H_
-#include "MenuControllerVisitor.h"
 #include "CommandController.h"
 #include "../Command/CommandBroker.h"
+#include "../../Models/Game.h"
 
 namespace Controllers {
 
@@ -18,18 +18,18 @@ private:
 	int origin;
 	int destination;
 public:
-	MoveController(std::string title);
+	MoveController(Models::Game& game, std::string title);
 	virtual ~MoveController();
 
 	MoveController* clone();
 
-	void accept(MenuControllerVisitor& menuControllerVisitor);
+	void accept(MenuControllerVisitor* menuControllerVisitor);
 
 	void visitBroker(Controllers::CommandBroker& broker);
 
 	bool canTakeCard(int position);
 	bool canMoveCardTo(int Origin, int destination);
-	void setMove(int Origin, int destination);
+	void setMove(int Origin, int Destination);
 
 	void execute();
 	void undo();

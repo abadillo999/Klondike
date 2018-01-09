@@ -9,7 +9,7 @@
 
 namespace Controllers {
 
-CommandController::CommandController(){
+CommandController::CommandController(Models::Game& game): Controllers::Controller(game) {
 
 }
 CommandController::~CommandController(){
