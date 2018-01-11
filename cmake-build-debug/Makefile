@@ -111,17 +111,1178 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named klondike
+# Target rules for targets named Solitario
 
 # Build rule for target.
-klondike: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 klondike
-.PHONY : klondike
+Solitario: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Solitario
+.PHONY : Solitario
 
 # fast build rule for target.
-klondike/fast:
-	$(MAKE) -f CMakeFiles/klondike.dir/build.make CMakeFiles/klondike.dir/build
-.PHONY : klondike/fast
+Solitario/fast:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/build
+.PHONY : Solitario/fast
+
+src/Controllers/CelebrateController.o: src/Controllers/CelebrateController.cpp.o
+
+.PHONY : src/Controllers/CelebrateController.o
+
+# target to build an object file
+src/Controllers/CelebrateController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/CelebrateController.cpp.o
+.PHONY : src/Controllers/CelebrateController.cpp.o
+
+src/Controllers/CelebrateController.i: src/Controllers/CelebrateController.cpp.i
+
+.PHONY : src/Controllers/CelebrateController.i
+
+# target to preprocess a source file
+src/Controllers/CelebrateController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/CelebrateController.cpp.i
+.PHONY : src/Controllers/CelebrateController.cpp.i
+
+src/Controllers/CelebrateController.s: src/Controllers/CelebrateController.cpp.s
+
+.PHONY : src/Controllers/CelebrateController.s
+
+# target to generate assembly for a file
+src/Controllers/CelebrateController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/CelebrateController.cpp.s
+.PHONY : src/Controllers/CelebrateController.cpp.s
+
+src/Controllers/Command/CommandBroker.o: src/Controllers/Command/CommandBroker.cpp.o
+
+.PHONY : src/Controllers/Command/CommandBroker.o
+
+# target to build an object file
+src/Controllers/Command/CommandBroker.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Command/CommandBroker.cpp.o
+.PHONY : src/Controllers/Command/CommandBroker.cpp.o
+
+src/Controllers/Command/CommandBroker.i: src/Controllers/Command/CommandBroker.cpp.i
+
+.PHONY : src/Controllers/Command/CommandBroker.i
+
+# target to preprocess a source file
+src/Controllers/Command/CommandBroker.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Command/CommandBroker.cpp.i
+.PHONY : src/Controllers/Command/CommandBroker.cpp.i
+
+src/Controllers/Command/CommandBroker.s: src/Controllers/Command/CommandBroker.cpp.s
+
+.PHONY : src/Controllers/Command/CommandBroker.s
+
+# target to generate assembly for a file
+src/Controllers/Command/CommandBroker.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Command/CommandBroker.cpp.s
+.PHONY : src/Controllers/Command/CommandBroker.cpp.s
+
+src/Controllers/Command/CommandMenu.o: src/Controllers/Command/CommandMenu.cpp.o
+
+.PHONY : src/Controllers/Command/CommandMenu.o
+
+# target to build an object file
+src/Controllers/Command/CommandMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Command/CommandMenu.cpp.o
+.PHONY : src/Controllers/Command/CommandMenu.cpp.o
+
+src/Controllers/Command/CommandMenu.i: src/Controllers/Command/CommandMenu.cpp.i
+
+.PHONY : src/Controllers/Command/CommandMenu.i
+
+# target to preprocess a source file
+src/Controllers/Command/CommandMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Command/CommandMenu.cpp.i
+.PHONY : src/Controllers/Command/CommandMenu.cpp.i
+
+src/Controllers/Command/CommandMenu.s: src/Controllers/Command/CommandMenu.cpp.s
+
+.PHONY : src/Controllers/Command/CommandMenu.s
+
+# target to generate assembly for a file
+src/Controllers/Command/CommandMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Command/CommandMenu.cpp.s
+.PHONY : src/Controllers/Command/CommandMenu.cpp.s
+
+src/Controllers/Controller.o: src/Controllers/Controller.cpp.o
+
+.PHONY : src/Controllers/Controller.o
+
+# target to build an object file
+src/Controllers/Controller.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Controller.cpp.o
+.PHONY : src/Controllers/Controller.cpp.o
+
+src/Controllers/Controller.i: src/Controllers/Controller.cpp.i
+
+.PHONY : src/Controllers/Controller.i
+
+# target to preprocess a source file
+src/Controllers/Controller.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Controller.cpp.i
+.PHONY : src/Controllers/Controller.cpp.i
+
+src/Controllers/Controller.s: src/Controllers/Controller.cpp.s
+
+.PHONY : src/Controllers/Controller.s
+
+# target to generate assembly for a file
+src/Controllers/Controller.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Controller.cpp.s
+.PHONY : src/Controllers/Controller.cpp.s
+
+src/Controllers/EndController.o: src/Controllers/EndController.cpp.o
+
+.PHONY : src/Controllers/EndController.o
+
+# target to build an object file
+src/Controllers/EndController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/EndController.cpp.o
+.PHONY : src/Controllers/EndController.cpp.o
+
+src/Controllers/EndController.i: src/Controllers/EndController.cpp.i
+
+.PHONY : src/Controllers/EndController.i
+
+# target to preprocess a source file
+src/Controllers/EndController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/EndController.cpp.i
+.PHONY : src/Controllers/EndController.cpp.i
+
+src/Controllers/EndController.s: src/Controllers/EndController.cpp.s
+
+.PHONY : src/Controllers/EndController.s
+
+# target to generate assembly for a file
+src/Controllers/EndController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/EndController.cpp.s
+.PHONY : src/Controllers/EndController.cpp.s
+
+src/Controllers/GameController.o: src/Controllers/GameController.cpp.o
+
+.PHONY : src/Controllers/GameController.o
+
+# target to build an object file
+src/Controllers/GameController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/GameController.cpp.o
+.PHONY : src/Controllers/GameController.cpp.o
+
+src/Controllers/GameController.i: src/Controllers/GameController.cpp.i
+
+.PHONY : src/Controllers/GameController.i
+
+# target to preprocess a source file
+src/Controllers/GameController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/GameController.cpp.i
+.PHONY : src/Controllers/GameController.cpp.i
+
+src/Controllers/GameController.s: src/Controllers/GameController.cpp.s
+
+.PHONY : src/Controllers/GameController.s
+
+# target to generate assembly for a file
+src/Controllers/GameController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/GameController.cpp.s
+.PHONY : src/Controllers/GameController.cpp.s
+
+src/Controllers/Logic.o: src/Controllers/Logic.cpp.o
+
+.PHONY : src/Controllers/Logic.o
+
+# target to build an object file
+src/Controllers/Logic.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Logic.cpp.o
+.PHONY : src/Controllers/Logic.cpp.o
+
+src/Controllers/Logic.i: src/Controllers/Logic.cpp.i
+
+.PHONY : src/Controllers/Logic.i
+
+# target to preprocess a source file
+src/Controllers/Logic.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Logic.cpp.i
+.PHONY : src/Controllers/Logic.cpp.i
+
+src/Controllers/Logic.s: src/Controllers/Logic.cpp.s
+
+.PHONY : src/Controllers/Logic.s
+
+# target to generate assembly for a file
+src/Controllers/Logic.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Logic.cpp.s
+.PHONY : src/Controllers/Logic.cpp.s
+
+src/Controllers/Menu/CommandController.o: src/Controllers/Menu/CommandController.cpp.o
+
+.PHONY : src/Controllers/Menu/CommandController.o
+
+# target to build an object file
+src/Controllers/Menu/CommandController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/CommandController.cpp.o
+.PHONY : src/Controllers/Menu/CommandController.cpp.o
+
+src/Controllers/Menu/CommandController.i: src/Controllers/Menu/CommandController.cpp.i
+
+.PHONY : src/Controllers/Menu/CommandController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/CommandController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/CommandController.cpp.i
+.PHONY : src/Controllers/Menu/CommandController.cpp.i
+
+src/Controllers/Menu/CommandController.s: src/Controllers/Menu/CommandController.cpp.s
+
+.PHONY : src/Controllers/Menu/CommandController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/CommandController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/CommandController.cpp.s
+.PHONY : src/Controllers/Menu/CommandController.cpp.s
+
+src/Controllers/Menu/ExitController.o: src/Controllers/Menu/ExitController.cpp.o
+
+.PHONY : src/Controllers/Menu/ExitController.o
+
+# target to build an object file
+src/Controllers/Menu/ExitController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/ExitController.cpp.o
+.PHONY : src/Controllers/Menu/ExitController.cpp.o
+
+src/Controllers/Menu/ExitController.i: src/Controllers/Menu/ExitController.cpp.i
+
+.PHONY : src/Controllers/Menu/ExitController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/ExitController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/ExitController.cpp.i
+.PHONY : src/Controllers/Menu/ExitController.cpp.i
+
+src/Controllers/Menu/ExitController.s: src/Controllers/Menu/ExitController.cpp.s
+
+.PHONY : src/Controllers/Menu/ExitController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/ExitController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/ExitController.cpp.s
+.PHONY : src/Controllers/Menu/ExitController.cpp.s
+
+src/Controllers/Menu/FlipController.o: src/Controllers/Menu/FlipController.cpp.o
+
+.PHONY : src/Controllers/Menu/FlipController.o
+
+# target to build an object file
+src/Controllers/Menu/FlipController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/FlipController.cpp.o
+.PHONY : src/Controllers/Menu/FlipController.cpp.o
+
+src/Controllers/Menu/FlipController.i: src/Controllers/Menu/FlipController.cpp.i
+
+.PHONY : src/Controllers/Menu/FlipController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/FlipController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/FlipController.cpp.i
+.PHONY : src/Controllers/Menu/FlipController.cpp.i
+
+src/Controllers/Menu/FlipController.s: src/Controllers/Menu/FlipController.cpp.s
+
+.PHONY : src/Controllers/Menu/FlipController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/FlipController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/FlipController.cpp.s
+.PHONY : src/Controllers/Menu/FlipController.cpp.s
+
+src/Controllers/Menu/MenuController.o: src/Controllers/Menu/MenuController.cpp.o
+
+.PHONY : src/Controllers/Menu/MenuController.o
+
+# target to build an object file
+src/Controllers/Menu/MenuController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/MenuController.cpp.o
+.PHONY : src/Controllers/Menu/MenuController.cpp.o
+
+src/Controllers/Menu/MenuController.i: src/Controllers/Menu/MenuController.cpp.i
+
+.PHONY : src/Controllers/Menu/MenuController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/MenuController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/MenuController.cpp.i
+.PHONY : src/Controllers/Menu/MenuController.cpp.i
+
+src/Controllers/Menu/MenuController.s: src/Controllers/Menu/MenuController.cpp.s
+
+.PHONY : src/Controllers/Menu/MenuController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/MenuController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/MenuController.cpp.s
+.PHONY : src/Controllers/Menu/MenuController.cpp.s
+
+src/Controllers/Menu/MoveController.o: src/Controllers/Menu/MoveController.cpp.o
+
+.PHONY : src/Controllers/Menu/MoveController.o
+
+# target to build an object file
+src/Controllers/Menu/MoveController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/MoveController.cpp.o
+.PHONY : src/Controllers/Menu/MoveController.cpp.o
+
+src/Controllers/Menu/MoveController.i: src/Controllers/Menu/MoveController.cpp.i
+
+.PHONY : src/Controllers/Menu/MoveController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/MoveController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/MoveController.cpp.i
+.PHONY : src/Controllers/Menu/MoveController.cpp.i
+
+src/Controllers/Menu/MoveController.s: src/Controllers/Menu/MoveController.cpp.s
+
+.PHONY : src/Controllers/Menu/MoveController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/MoveController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/MoveController.cpp.s
+.PHONY : src/Controllers/Menu/MoveController.cpp.s
+
+src/Controllers/Menu/RedoController.o: src/Controllers/Menu/RedoController.cpp.o
+
+.PHONY : src/Controllers/Menu/RedoController.o
+
+# target to build an object file
+src/Controllers/Menu/RedoController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/RedoController.cpp.o
+.PHONY : src/Controllers/Menu/RedoController.cpp.o
+
+src/Controllers/Menu/RedoController.i: src/Controllers/Menu/RedoController.cpp.i
+
+.PHONY : src/Controllers/Menu/RedoController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/RedoController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/RedoController.cpp.i
+.PHONY : src/Controllers/Menu/RedoController.cpp.i
+
+src/Controllers/Menu/RedoController.s: src/Controllers/Menu/RedoController.cpp.s
+
+.PHONY : src/Controllers/Menu/RedoController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/RedoController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/RedoController.cpp.s
+.PHONY : src/Controllers/Menu/RedoController.cpp.s
+
+src/Controllers/Menu/UndoController.o: src/Controllers/Menu/UndoController.cpp.o
+
+.PHONY : src/Controllers/Menu/UndoController.o
+
+# target to build an object file
+src/Controllers/Menu/UndoController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/UndoController.cpp.o
+.PHONY : src/Controllers/Menu/UndoController.cpp.o
+
+src/Controllers/Menu/UndoController.i: src/Controllers/Menu/UndoController.cpp.i
+
+.PHONY : src/Controllers/Menu/UndoController.i
+
+# target to preprocess a source file
+src/Controllers/Menu/UndoController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/UndoController.cpp.i
+.PHONY : src/Controllers/Menu/UndoController.cpp.i
+
+src/Controllers/Menu/UndoController.s: src/Controllers/Menu/UndoController.cpp.s
+
+.PHONY : src/Controllers/Menu/UndoController.s
+
+# target to generate assembly for a file
+src/Controllers/Menu/UndoController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/Menu/UndoController.cpp.s
+.PHONY : src/Controllers/Menu/UndoController.cpp.s
+
+src/Controllers/OperationController.o: src/Controllers/OperationController.cpp.o
+
+.PHONY : src/Controllers/OperationController.o
+
+# target to build an object file
+src/Controllers/OperationController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/OperationController.cpp.o
+.PHONY : src/Controllers/OperationController.cpp.o
+
+src/Controllers/OperationController.i: src/Controllers/OperationController.cpp.i
+
+.PHONY : src/Controllers/OperationController.i
+
+# target to preprocess a source file
+src/Controllers/OperationController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/OperationController.cpp.i
+.PHONY : src/Controllers/OperationController.cpp.i
+
+src/Controllers/OperationController.s: src/Controllers/OperationController.cpp.s
+
+.PHONY : src/Controllers/OperationController.s
+
+# target to generate assembly for a file
+src/Controllers/OperationController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/OperationController.cpp.s
+.PHONY : src/Controllers/OperationController.cpp.s
+
+src/Controllers/StartController.o: src/Controllers/StartController.cpp.o
+
+.PHONY : src/Controllers/StartController.o
+
+# target to build an object file
+src/Controllers/StartController.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/StartController.cpp.o
+.PHONY : src/Controllers/StartController.cpp.o
+
+src/Controllers/StartController.i: src/Controllers/StartController.cpp.i
+
+.PHONY : src/Controllers/StartController.i
+
+# target to preprocess a source file
+src/Controllers/StartController.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/StartController.cpp.i
+.PHONY : src/Controllers/StartController.cpp.i
+
+src/Controllers/StartController.s: src/Controllers/StartController.cpp.s
+
+.PHONY : src/Controllers/StartController.s
+
+# target to generate assembly for a file
+src/Controllers/StartController.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Controllers/StartController.cpp.s
+.PHONY : src/Controllers/StartController.cpp.s
+
+src/Klondike.o: src/Klondike.cpp.o
+
+.PHONY : src/Klondike.o
+
+# target to build an object file
+src/Klondike.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Klondike.cpp.o
+.PHONY : src/Klondike.cpp.o
+
+src/Klondike.i: src/Klondike.cpp.i
+
+.PHONY : src/Klondike.i
+
+# target to preprocess a source file
+src/Klondike.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Klondike.cpp.i
+.PHONY : src/Klondike.cpp.i
+
+src/Klondike.s: src/Klondike.cpp.s
+
+.PHONY : src/Klondike.s
+
+# target to generate assembly for a file
+src/Klondike.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Klondike.cpp.s
+.PHONY : src/Klondike.cpp.s
+
+src/Models/Board.o: src/Models/Board.cpp.o
+
+.PHONY : src/Models/Board.o
+
+# target to build an object file
+src/Models/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Board.cpp.o
+.PHONY : src/Models/Board.cpp.o
+
+src/Models/Board.i: src/Models/Board.cpp.i
+
+.PHONY : src/Models/Board.i
+
+# target to preprocess a source file
+src/Models/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Board.cpp.i
+.PHONY : src/Models/Board.cpp.i
+
+src/Models/Board.s: src/Models/Board.cpp.s
+
+.PHONY : src/Models/Board.s
+
+# target to generate assembly for a file
+src/Models/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Board.cpp.s
+.PHONY : src/Models/Board.cpp.s
+
+src/Models/Card.o: src/Models/Card.cpp.o
+
+.PHONY : src/Models/Card.o
+
+# target to build an object file
+src/Models/Card.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Card.cpp.o
+.PHONY : src/Models/Card.cpp.o
+
+src/Models/Card.i: src/Models/Card.cpp.i
+
+.PHONY : src/Models/Card.i
+
+# target to preprocess a source file
+src/Models/Card.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Card.cpp.i
+.PHONY : src/Models/Card.cpp.i
+
+src/Models/Card.s: src/Models/Card.cpp.s
+
+.PHONY : src/Models/Card.s
+
+# target to generate assembly for a file
+src/Models/Card.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Card.cpp.s
+.PHONY : src/Models/Card.cpp.s
+
+src/Models/Deck.o: src/Models/Deck.cpp.o
+
+.PHONY : src/Models/Deck.o
+
+# target to build an object file
+src/Models/Deck.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Deck.cpp.o
+.PHONY : src/Models/Deck.cpp.o
+
+src/Models/Deck.i: src/Models/Deck.cpp.i
+
+.PHONY : src/Models/Deck.i
+
+# target to preprocess a source file
+src/Models/Deck.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Deck.cpp.i
+.PHONY : src/Models/Deck.cpp.i
+
+src/Models/Deck.s: src/Models/Deck.cpp.s
+
+.PHONY : src/Models/Deck.s
+
+# target to generate assembly for a file
+src/Models/Deck.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Deck.cpp.s
+.PHONY : src/Models/Deck.cpp.s
+
+src/Models/Foundation.o: src/Models/Foundation.cpp.o
+
+.PHONY : src/Models/Foundation.o
+
+# target to build an object file
+src/Models/Foundation.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Foundation.cpp.o
+.PHONY : src/Models/Foundation.cpp.o
+
+src/Models/Foundation.i: src/Models/Foundation.cpp.i
+
+.PHONY : src/Models/Foundation.i
+
+# target to preprocess a source file
+src/Models/Foundation.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Foundation.cpp.i
+.PHONY : src/Models/Foundation.cpp.i
+
+src/Models/Foundation.s: src/Models/Foundation.cpp.s
+
+.PHONY : src/Models/Foundation.s
+
+# target to generate assembly for a file
+src/Models/Foundation.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Foundation.cpp.s
+.PHONY : src/Models/Foundation.cpp.s
+
+src/Models/Game.o: src/Models/Game.cpp.o
+
+.PHONY : src/Models/Game.o
+
+# target to build an object file
+src/Models/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Game.cpp.o
+.PHONY : src/Models/Game.cpp.o
+
+src/Models/Game.i: src/Models/Game.cpp.i
+
+.PHONY : src/Models/Game.i
+
+# target to preprocess a source file
+src/Models/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Game.cpp.i
+.PHONY : src/Models/Game.cpp.i
+
+src/Models/Game.s: src/Models/Game.cpp.s
+
+.PHONY : src/Models/Game.s
+
+# target to generate assembly for a file
+src/Models/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Game.cpp.s
+.PHONY : src/Models/Game.cpp.s
+
+src/Models/Pile.o: src/Models/Pile.cpp.o
+
+.PHONY : src/Models/Pile.o
+
+# target to build an object file
+src/Models/Pile.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Pile.cpp.o
+.PHONY : src/Models/Pile.cpp.o
+
+src/Models/Pile.i: src/Models/Pile.cpp.i
+
+.PHONY : src/Models/Pile.i
+
+# target to preprocess a source file
+src/Models/Pile.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Pile.cpp.i
+.PHONY : src/Models/Pile.cpp.i
+
+src/Models/Pile.s: src/Models/Pile.cpp.s
+
+.PHONY : src/Models/Pile.s
+
+# target to generate assembly for a file
+src/Models/Pile.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Pile.cpp.s
+.PHONY : src/Models/Pile.cpp.s
+
+src/Models/Queue.o: src/Models/Queue.cpp.o
+
+.PHONY : src/Models/Queue.o
+
+# target to build an object file
+src/Models/Queue.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Queue.cpp.o
+.PHONY : src/Models/Queue.cpp.o
+
+src/Models/Queue.i: src/Models/Queue.cpp.i
+
+.PHONY : src/Models/Queue.i
+
+# target to preprocess a source file
+src/Models/Queue.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Queue.cpp.i
+.PHONY : src/Models/Queue.cpp.i
+
+src/Models/Queue.s: src/Models/Queue.cpp.s
+
+.PHONY : src/Models/Queue.s
+
+# target to generate assembly for a file
+src/Models/Queue.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Queue.cpp.s
+.PHONY : src/Models/Queue.cpp.s
+
+src/Models/Stack.o: src/Models/Stack.cpp.o
+
+.PHONY : src/Models/Stack.o
+
+# target to build an object file
+src/Models/Stack.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Stack.cpp.o
+.PHONY : src/Models/Stack.cpp.o
+
+src/Models/Stack.i: src/Models/Stack.cpp.i
+
+.PHONY : src/Models/Stack.i
+
+# target to preprocess a source file
+src/Models/Stack.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Stack.cpp.i
+.PHONY : src/Models/Stack.cpp.i
+
+src/Models/Stack.s: src/Models/Stack.cpp.s
+
+.PHONY : src/Models/Stack.s
+
+# target to generate assembly for a file
+src/Models/Stack.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Stack.cpp.s
+.PHONY : src/Models/Stack.cpp.s
+
+src/Models/Waste.o: src/Models/Waste.cpp.o
+
+.PHONY : src/Models/Waste.o
+
+# target to build an object file
+src/Models/Waste.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Waste.cpp.o
+.PHONY : src/Models/Waste.cpp.o
+
+src/Models/Waste.i: src/Models/Waste.cpp.i
+
+.PHONY : src/Models/Waste.i
+
+# target to preprocess a source file
+src/Models/Waste.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Waste.cpp.i
+.PHONY : src/Models/Waste.cpp.i
+
+src/Models/Waste.s: src/Models/Waste.cpp.s
+
+.PHONY : src/Models/Waste.s
+
+# target to generate assembly for a file
+src/Models/Waste.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Models/Waste.cpp.s
+.PHONY : src/Models/Waste.cpp.s
+
+src/Utils/BooleanDialog.o: src/Utils/BooleanDialog.cpp.o
+
+.PHONY : src/Utils/BooleanDialog.o
+
+# target to build an object file
+src/Utils/BooleanDialog.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Utils/BooleanDialog.cpp.o
+.PHONY : src/Utils/BooleanDialog.cpp.o
+
+src/Utils/BooleanDialog.i: src/Utils/BooleanDialog.cpp.i
+
+.PHONY : src/Utils/BooleanDialog.i
+
+# target to preprocess a source file
+src/Utils/BooleanDialog.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Utils/BooleanDialog.cpp.i
+.PHONY : src/Utils/BooleanDialog.cpp.i
+
+src/Utils/BooleanDialog.s: src/Utils/BooleanDialog.cpp.s
+
+.PHONY : src/Utils/BooleanDialog.s
+
+# target to generate assembly for a file
+src/Utils/BooleanDialog.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Utils/BooleanDialog.cpp.s
+.PHONY : src/Utils/BooleanDialog.cpp.s
+
+src/Utils/IO.o: src/Utils/IO.cpp.o
+
+.PHONY : src/Utils/IO.o
+
+# target to build an object file
+src/Utils/IO.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Utils/IO.cpp.o
+.PHONY : src/Utils/IO.cpp.o
+
+src/Utils/IO.i: src/Utils/IO.cpp.i
+
+.PHONY : src/Utils/IO.i
+
+# target to preprocess a source file
+src/Utils/IO.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Utils/IO.cpp.i
+.PHONY : src/Utils/IO.cpp.i
+
+src/Utils/IO.s: src/Utils/IO.cpp.s
+
+.PHONY : src/Utils/IO.s
+
+# target to generate assembly for a file
+src/Utils/IO.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Utils/IO.cpp.s
+.PHONY : src/Utils/IO.cpp.s
+
+src/Views/Console/CelebrateView.o: src/Views/Console/CelebrateView.cpp.o
+
+.PHONY : src/Views/Console/CelebrateView.o
+
+# target to build an object file
+src/Views/Console/CelebrateView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/CelebrateView.cpp.o
+.PHONY : src/Views/Console/CelebrateView.cpp.o
+
+src/Views/Console/CelebrateView.i: src/Views/Console/CelebrateView.cpp.i
+
+.PHONY : src/Views/Console/CelebrateView.i
+
+# target to preprocess a source file
+src/Views/Console/CelebrateView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/CelebrateView.cpp.i
+.PHONY : src/Views/Console/CelebrateView.cpp.i
+
+src/Views/Console/CelebrateView.s: src/Views/Console/CelebrateView.cpp.s
+
+.PHONY : src/Views/Console/CelebrateView.s
+
+# target to generate assembly for a file
+src/Views/Console/CelebrateView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/CelebrateView.cpp.s
+.PHONY : src/Views/Console/CelebrateView.cpp.s
+
+src/Views/Console/Command/FlipView.o: src/Views/Console/Command/FlipView.cpp.o
+
+.PHONY : src/Views/Console/Command/FlipView.o
+
+# target to build an object file
+src/Views/Console/Command/FlipView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/FlipView.cpp.o
+.PHONY : src/Views/Console/Command/FlipView.cpp.o
+
+src/Views/Console/Command/FlipView.i: src/Views/Console/Command/FlipView.cpp.i
+
+.PHONY : src/Views/Console/Command/FlipView.i
+
+# target to preprocess a source file
+src/Views/Console/Command/FlipView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/FlipView.cpp.i
+.PHONY : src/Views/Console/Command/FlipView.cpp.i
+
+src/Views/Console/Command/FlipView.s: src/Views/Console/Command/FlipView.cpp.s
+
+.PHONY : src/Views/Console/Command/FlipView.s
+
+# target to generate assembly for a file
+src/Views/Console/Command/FlipView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/FlipView.cpp.s
+.PHONY : src/Views/Console/Command/FlipView.cpp.s
+
+src/Views/Console/Command/MoveView.o: src/Views/Console/Command/MoveView.cpp.o
+
+.PHONY : src/Views/Console/Command/MoveView.o
+
+# target to build an object file
+src/Views/Console/Command/MoveView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/MoveView.cpp.o
+.PHONY : src/Views/Console/Command/MoveView.cpp.o
+
+src/Views/Console/Command/MoveView.i: src/Views/Console/Command/MoveView.cpp.i
+
+.PHONY : src/Views/Console/Command/MoveView.i
+
+# target to preprocess a source file
+src/Views/Console/Command/MoveView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/MoveView.cpp.i
+.PHONY : src/Views/Console/Command/MoveView.cpp.i
+
+src/Views/Console/Command/MoveView.s: src/Views/Console/Command/MoveView.cpp.s
+
+.PHONY : src/Views/Console/Command/MoveView.s
+
+# target to generate assembly for a file
+src/Views/Console/Command/MoveView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/MoveView.cpp.s
+.PHONY : src/Views/Console/Command/MoveView.cpp.s
+
+src/Views/Console/Command/RedoView.o: src/Views/Console/Command/RedoView.cpp.o
+
+.PHONY : src/Views/Console/Command/RedoView.o
+
+# target to build an object file
+src/Views/Console/Command/RedoView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/RedoView.cpp.o
+.PHONY : src/Views/Console/Command/RedoView.cpp.o
+
+src/Views/Console/Command/RedoView.i: src/Views/Console/Command/RedoView.cpp.i
+
+.PHONY : src/Views/Console/Command/RedoView.i
+
+# target to preprocess a source file
+src/Views/Console/Command/RedoView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/RedoView.cpp.i
+.PHONY : src/Views/Console/Command/RedoView.cpp.i
+
+src/Views/Console/Command/RedoView.s: src/Views/Console/Command/RedoView.cpp.s
+
+.PHONY : src/Views/Console/Command/RedoView.s
+
+# target to generate assembly for a file
+src/Views/Console/Command/RedoView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/RedoView.cpp.s
+.PHONY : src/Views/Console/Command/RedoView.cpp.s
+
+src/Views/Console/Command/UndoView.o: src/Views/Console/Command/UndoView.cpp.o
+
+.PHONY : src/Views/Console/Command/UndoView.o
+
+# target to build an object file
+src/Views/Console/Command/UndoView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/UndoView.cpp.o
+.PHONY : src/Views/Console/Command/UndoView.cpp.o
+
+src/Views/Console/Command/UndoView.i: src/Views/Console/Command/UndoView.cpp.i
+
+.PHONY : src/Views/Console/Command/UndoView.i
+
+# target to preprocess a source file
+src/Views/Console/Command/UndoView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/UndoView.cpp.i
+.PHONY : src/Views/Console/Command/UndoView.cpp.i
+
+src/Views/Console/Command/UndoView.s: src/Views/Console/Command/UndoView.cpp.s
+
+.PHONY : src/Views/Console/Command/UndoView.s
+
+# target to generate assembly for a file
+src/Views/Console/Command/UndoView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Command/UndoView.cpp.s
+.PHONY : src/Views/Console/Command/UndoView.cpp.s
+
+src/Views/Console/ConsoleView.o: src/Views/Console/ConsoleView.cpp.o
+
+.PHONY : src/Views/Console/ConsoleView.o
+
+# target to build an object file
+src/Views/Console/ConsoleView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/ConsoleView.cpp.o
+.PHONY : src/Views/Console/ConsoleView.cpp.o
+
+src/Views/Console/ConsoleView.i: src/Views/Console/ConsoleView.cpp.i
+
+.PHONY : src/Views/Console/ConsoleView.i
+
+# target to preprocess a source file
+src/Views/Console/ConsoleView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/ConsoleView.cpp.i
+.PHONY : src/Views/Console/ConsoleView.cpp.i
+
+src/Views/Console/ConsoleView.s: src/Views/Console/ConsoleView.cpp.s
+
+.PHONY : src/Views/Console/ConsoleView.s
+
+# target to generate assembly for a file
+src/Views/Console/ConsoleView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/ConsoleView.cpp.s
+.PHONY : src/Views/Console/ConsoleView.cpp.s
+
+src/Views/Console/EndView.o: src/Views/Console/EndView.cpp.o
+
+.PHONY : src/Views/Console/EndView.o
+
+# target to build an object file
+src/Views/Console/EndView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/EndView.cpp.o
+.PHONY : src/Views/Console/EndView.cpp.o
+
+src/Views/Console/EndView.i: src/Views/Console/EndView.cpp.i
+
+.PHONY : src/Views/Console/EndView.i
+
+# target to preprocess a source file
+src/Views/Console/EndView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/EndView.cpp.i
+.PHONY : src/Views/Console/EndView.cpp.i
+
+src/Views/Console/EndView.s: src/Views/Console/EndView.cpp.s
+
+.PHONY : src/Views/Console/EndView.s
+
+# target to generate assembly for a file
+src/Views/Console/EndView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/EndView.cpp.s
+.PHONY : src/Views/Console/EndView.cpp.s
+
+src/Views/Console/GameView.o: src/Views/Console/GameView.cpp.o
+
+.PHONY : src/Views/Console/GameView.o
+
+# target to build an object file
+src/Views/Console/GameView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/GameView.cpp.o
+.PHONY : src/Views/Console/GameView.cpp.o
+
+src/Views/Console/GameView.i: src/Views/Console/GameView.cpp.i
+
+.PHONY : src/Views/Console/GameView.i
+
+# target to preprocess a source file
+src/Views/Console/GameView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/GameView.cpp.i
+.PHONY : src/Views/Console/GameView.cpp.i
+
+src/Views/Console/GameView.s: src/Views/Console/GameView.cpp.s
+
+.PHONY : src/Views/Console/GameView.s
+
+# target to generate assembly for a file
+src/Views/Console/GameView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/GameView.cpp.s
+.PHONY : src/Views/Console/GameView.cpp.s
+
+src/Views/Console/MenuView.o: src/Views/Console/MenuView.cpp.o
+
+.PHONY : src/Views/Console/MenuView.o
+
+# target to build an object file
+src/Views/Console/MenuView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/MenuView.cpp.o
+.PHONY : src/Views/Console/MenuView.cpp.o
+
+src/Views/Console/MenuView.i: src/Views/Console/MenuView.cpp.i
+
+.PHONY : src/Views/Console/MenuView.i
+
+# target to preprocess a source file
+src/Views/Console/MenuView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/MenuView.cpp.i
+.PHONY : src/Views/Console/MenuView.cpp.i
+
+src/Views/Console/MenuView.s: src/Views/Console/MenuView.cpp.s
+
+.PHONY : src/Views/Console/MenuView.s
+
+# target to generate assembly for a file
+src/Views/Console/MenuView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/MenuView.cpp.s
+.PHONY : src/Views/Console/MenuView.cpp.s
+
+src/Views/Console/Models/BoardView.o: src/Views/Console/Models/BoardView.cpp.o
+
+.PHONY : src/Views/Console/Models/BoardView.o
+
+# target to build an object file
+src/Views/Console/Models/BoardView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/BoardView.cpp.o
+.PHONY : src/Views/Console/Models/BoardView.cpp.o
+
+src/Views/Console/Models/BoardView.i: src/Views/Console/Models/BoardView.cpp.i
+
+.PHONY : src/Views/Console/Models/BoardView.i
+
+# target to preprocess a source file
+src/Views/Console/Models/BoardView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/BoardView.cpp.i
+.PHONY : src/Views/Console/Models/BoardView.cpp.i
+
+src/Views/Console/Models/BoardView.s: src/Views/Console/Models/BoardView.cpp.s
+
+.PHONY : src/Views/Console/Models/BoardView.s
+
+# target to generate assembly for a file
+src/Views/Console/Models/BoardView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/BoardView.cpp.s
+.PHONY : src/Views/Console/Models/BoardView.cpp.s
+
+src/Views/Console/Models/StackView.o: src/Views/Console/Models/StackView.cpp.o
+
+.PHONY : src/Views/Console/Models/StackView.o
+
+# target to build an object file
+src/Views/Console/Models/StackView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/StackView.cpp.o
+.PHONY : src/Views/Console/Models/StackView.cpp.o
+
+src/Views/Console/Models/StackView.i: src/Views/Console/Models/StackView.cpp.i
+
+.PHONY : src/Views/Console/Models/StackView.i
+
+# target to preprocess a source file
+src/Views/Console/Models/StackView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/StackView.cpp.i
+.PHONY : src/Views/Console/Models/StackView.cpp.i
+
+src/Views/Console/Models/StackView.s: src/Views/Console/Models/StackView.cpp.s
+
+.PHONY : src/Views/Console/Models/StackView.s
+
+# target to generate assembly for a file
+src/Views/Console/Models/StackView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/StackView.cpp.s
+.PHONY : src/Views/Console/Models/StackView.cpp.s
+
+src/Views/Console/Models/SuitView.o: src/Views/Console/Models/SuitView.cpp.o
+
+.PHONY : src/Views/Console/Models/SuitView.o
+
+# target to build an object file
+src/Views/Console/Models/SuitView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/SuitView.cpp.o
+.PHONY : src/Views/Console/Models/SuitView.cpp.o
+
+src/Views/Console/Models/SuitView.i: src/Views/Console/Models/SuitView.cpp.i
+
+.PHONY : src/Views/Console/Models/SuitView.i
+
+# target to preprocess a source file
+src/Views/Console/Models/SuitView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/SuitView.cpp.i
+.PHONY : src/Views/Console/Models/SuitView.cpp.i
+
+src/Views/Console/Models/SuitView.s: src/Views/Console/Models/SuitView.cpp.s
+
+.PHONY : src/Views/Console/Models/SuitView.s
+
+# target to generate assembly for a file
+src/Views/Console/Models/SuitView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Models/SuitView.cpp.s
+.PHONY : src/Views/Console/Models/SuitView.cpp.s
+
+src/Views/Console/StartView.o: src/Views/Console/StartView.cpp.o
+
+.PHONY : src/Views/Console/StartView.o
+
+# target to build an object file
+src/Views/Console/StartView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/StartView.cpp.o
+.PHONY : src/Views/Console/StartView.cpp.o
+
+src/Views/Console/StartView.i: src/Views/Console/StartView.cpp.i
+
+.PHONY : src/Views/Console/StartView.i
+
+# target to preprocess a source file
+src/Views/Console/StartView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/StartView.cpp.i
+.PHONY : src/Views/Console/StartView.cpp.i
+
+src/Views/Console/StartView.s: src/Views/Console/StartView.cpp.s
+
+.PHONY : src/Views/Console/StartView.s
+
+# target to generate assembly for a file
+src/Views/Console/StartView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/StartView.cpp.s
+.PHONY : src/Views/Console/StartView.cpp.s
+
+src/Views/Console/Utils/LimitedIntDialogView.o: src/Views/Console/Utils/LimitedIntDialogView.cpp.o
+
+.PHONY : src/Views/Console/Utils/LimitedIntDialogView.o
+
+# target to build an object file
+src/Views/Console/Utils/LimitedIntDialogView.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Utils/LimitedIntDialogView.cpp.o
+.PHONY : src/Views/Console/Utils/LimitedIntDialogView.cpp.o
+
+src/Views/Console/Utils/LimitedIntDialogView.i: src/Views/Console/Utils/LimitedIntDialogView.cpp.i
+
+.PHONY : src/Views/Console/Utils/LimitedIntDialogView.i
+
+# target to preprocess a source file
+src/Views/Console/Utils/LimitedIntDialogView.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Utils/LimitedIntDialogView.cpp.i
+.PHONY : src/Views/Console/Utils/LimitedIntDialogView.cpp.i
+
+src/Views/Console/Utils/LimitedIntDialogView.s: src/Views/Console/Utils/LimitedIntDialogView.cpp.s
+
+.PHONY : src/Views/Console/Utils/LimitedIntDialogView.s
+
+# target to generate assembly for a file
+src/Views/Console/Utils/LimitedIntDialogView.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/Views/Console/Utils/LimitedIntDialogView.cpp.s
+.PHONY : src/Views/Console/Utils/LimitedIntDialogView.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -131,7 +1292,136 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... klondike"
+	@echo "... Solitario"
+	@echo "... src/Controllers/CelebrateController.o"
+	@echo "... src/Controllers/CelebrateController.i"
+	@echo "... src/Controllers/CelebrateController.s"
+	@echo "... src/Controllers/Command/CommandBroker.o"
+	@echo "... src/Controllers/Command/CommandBroker.i"
+	@echo "... src/Controllers/Command/CommandBroker.s"
+	@echo "... src/Controllers/Command/CommandMenu.o"
+	@echo "... src/Controllers/Command/CommandMenu.i"
+	@echo "... src/Controllers/Command/CommandMenu.s"
+	@echo "... src/Controllers/Controller.o"
+	@echo "... src/Controllers/Controller.i"
+	@echo "... src/Controllers/Controller.s"
+	@echo "... src/Controllers/EndController.o"
+	@echo "... src/Controllers/EndController.i"
+	@echo "... src/Controllers/EndController.s"
+	@echo "... src/Controllers/GameController.o"
+	@echo "... src/Controllers/GameController.i"
+	@echo "... src/Controllers/GameController.s"
+	@echo "... src/Controllers/Logic.o"
+	@echo "... src/Controllers/Logic.i"
+	@echo "... src/Controllers/Logic.s"
+	@echo "... src/Controllers/Menu/CommandController.o"
+	@echo "... src/Controllers/Menu/CommandController.i"
+	@echo "... src/Controllers/Menu/CommandController.s"
+	@echo "... src/Controllers/Menu/ExitController.o"
+	@echo "... src/Controllers/Menu/ExitController.i"
+	@echo "... src/Controllers/Menu/ExitController.s"
+	@echo "... src/Controllers/Menu/FlipController.o"
+	@echo "... src/Controllers/Menu/FlipController.i"
+	@echo "... src/Controllers/Menu/FlipController.s"
+	@echo "... src/Controllers/Menu/MenuController.o"
+	@echo "... src/Controllers/Menu/MenuController.i"
+	@echo "... src/Controllers/Menu/MenuController.s"
+	@echo "... src/Controllers/Menu/MoveController.o"
+	@echo "... src/Controllers/Menu/MoveController.i"
+	@echo "... src/Controllers/Menu/MoveController.s"
+	@echo "... src/Controllers/Menu/RedoController.o"
+	@echo "... src/Controllers/Menu/RedoController.i"
+	@echo "... src/Controllers/Menu/RedoController.s"
+	@echo "... src/Controllers/Menu/UndoController.o"
+	@echo "... src/Controllers/Menu/UndoController.i"
+	@echo "... src/Controllers/Menu/UndoController.s"
+	@echo "... src/Controllers/OperationController.o"
+	@echo "... src/Controllers/OperationController.i"
+	@echo "... src/Controllers/OperationController.s"
+	@echo "... src/Controllers/StartController.o"
+	@echo "... src/Controllers/StartController.i"
+	@echo "... src/Controllers/StartController.s"
+	@echo "... src/Klondike.o"
+	@echo "... src/Klondike.i"
+	@echo "... src/Klondike.s"
+	@echo "... src/Models/Board.o"
+	@echo "... src/Models/Board.i"
+	@echo "... src/Models/Board.s"
+	@echo "... src/Models/Card.o"
+	@echo "... src/Models/Card.i"
+	@echo "... src/Models/Card.s"
+	@echo "... src/Models/Deck.o"
+	@echo "... src/Models/Deck.i"
+	@echo "... src/Models/Deck.s"
+	@echo "... src/Models/Foundation.o"
+	@echo "... src/Models/Foundation.i"
+	@echo "... src/Models/Foundation.s"
+	@echo "... src/Models/Game.o"
+	@echo "... src/Models/Game.i"
+	@echo "... src/Models/Game.s"
+	@echo "... src/Models/Pile.o"
+	@echo "... src/Models/Pile.i"
+	@echo "... src/Models/Pile.s"
+	@echo "... src/Models/Queue.o"
+	@echo "... src/Models/Queue.i"
+	@echo "... src/Models/Queue.s"
+	@echo "... src/Models/Stack.o"
+	@echo "... src/Models/Stack.i"
+	@echo "... src/Models/Stack.s"
+	@echo "... src/Models/Waste.o"
+	@echo "... src/Models/Waste.i"
+	@echo "... src/Models/Waste.s"
+	@echo "... src/Utils/BooleanDialog.o"
+	@echo "... src/Utils/BooleanDialog.i"
+	@echo "... src/Utils/BooleanDialog.s"
+	@echo "... src/Utils/IO.o"
+	@echo "... src/Utils/IO.i"
+	@echo "... src/Utils/IO.s"
+	@echo "... src/Views/Console/CelebrateView.o"
+	@echo "... src/Views/Console/CelebrateView.i"
+	@echo "... src/Views/Console/CelebrateView.s"
+	@echo "... src/Views/Console/Command/FlipView.o"
+	@echo "... src/Views/Console/Command/FlipView.i"
+	@echo "... src/Views/Console/Command/FlipView.s"
+	@echo "... src/Views/Console/Command/MoveView.o"
+	@echo "... src/Views/Console/Command/MoveView.i"
+	@echo "... src/Views/Console/Command/MoveView.s"
+	@echo "... src/Views/Console/Command/RedoView.o"
+	@echo "... src/Views/Console/Command/RedoView.i"
+	@echo "... src/Views/Console/Command/RedoView.s"
+	@echo "... src/Views/Console/Command/UndoView.o"
+	@echo "... src/Views/Console/Command/UndoView.i"
+	@echo "... src/Views/Console/Command/UndoView.s"
+	@echo "... src/Views/Console/ConsoleView.o"
+	@echo "... src/Views/Console/ConsoleView.i"
+	@echo "... src/Views/Console/ConsoleView.s"
+	@echo "... src/Views/Console/EndView.o"
+	@echo "... src/Views/Console/EndView.i"
+	@echo "... src/Views/Console/EndView.s"
+	@echo "... src/Views/Console/GameView.o"
+	@echo "... src/Views/Console/GameView.i"
+	@echo "... src/Views/Console/GameView.s"
+	@echo "... src/Views/Console/MenuView.o"
+	@echo "... src/Views/Console/MenuView.i"
+	@echo "... src/Views/Console/MenuView.s"
+	@echo "... src/Views/Console/Models/BoardView.o"
+	@echo "... src/Views/Console/Models/BoardView.i"
+	@echo "... src/Views/Console/Models/BoardView.s"
+	@echo "... src/Views/Console/Models/StackView.o"
+	@echo "... src/Views/Console/Models/StackView.i"
+	@echo "... src/Views/Console/Models/StackView.s"
+	@echo "... src/Views/Console/Models/SuitView.o"
+	@echo "... src/Views/Console/Models/SuitView.i"
+	@echo "... src/Views/Console/Models/SuitView.s"
+	@echo "... src/Views/Console/StartView.o"
+	@echo "... src/Views/Console/StartView.i"
+	@echo "... src/Views/Console/StartView.s"
+	@echo "... src/Views/Console/Utils/LimitedIntDialogView.o"
+	@echo "... src/Views/Console/Utils/LimitedIntDialogView.i"
+	@echo "... src/Views/Console/Utils/LimitedIntDialogView.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

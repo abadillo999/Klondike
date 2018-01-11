@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Solitario"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Solitario">
+				<Option output="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Solitario" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 Solitario"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Solitario/fast">
+				<Option output="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Solitario" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 Solitario/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/CelebrateController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/CelebrateController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Command/CommandBroker.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Command/CommandBroker.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Command/CommandMenu.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Command/CommandMenu.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Controller.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Controller.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/EndController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/EndController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/GameController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/GameController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Logic.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Logic.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/CommandController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/CommandController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/ExitController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/ExitController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/FlipController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/FlipController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/MenuController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/MenuController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/MenuControllerVisitor.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/MoveController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/MoveController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/RedoController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/RedoController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/UndoController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/Menu/UndoController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/OperationController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/OperationController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/OperationControllerVisitor.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/StartController.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Controllers/StartController.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Klondike.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Klondike.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Board.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Board.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Card.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Card.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Deck.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Deck.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Foundation.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Foundation.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Game.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Game.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Pile.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Pile.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Queue.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Queue.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Stack.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Stack.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/States.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Suits.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Waste.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Models/Waste.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Utils/BooleanDialog.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Utils/BooleanDialog.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Utils/IO.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Utils/IO.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/CelebrateView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/CelebrateView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/FlipView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/FlipView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/MoveView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/MoveView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/RedoView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/RedoView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/UndoView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Command/UndoView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/ConsoleView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/ConsoleView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/EndView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/EndView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/GameView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/GameView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/MenuView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/MenuView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Models/BoardView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Models/BoardView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Models/StackView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Models/StackView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Models/SuitView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Models/SuitView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/StartView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/StartView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Utils/LimitedIntDialogView.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/Console/Utils/LimitedIntDialogView.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/Views/View.h">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/src/main.cpp">
+			<Option target="Solitario"/>
+		</Unit>
+		<Unit filename="/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

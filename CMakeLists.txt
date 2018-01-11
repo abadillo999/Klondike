@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(klondike)
+project(Solitario)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(klondike
+add_executable(Solitario
         src/Controllers/Command/CommandBroker.cpp
         src/Controllers/Command/CommandBroker.h
         src/Controllers/Command/CommandMenu.cpp
@@ -76,4 +76,7 @@ add_executable(klondike
         src/main.cpp src/Models/Board.cpp src/Models/Board.h src/Models/Card.cpp src/Models/Card.h src/Models/Deck.cpp src/Models/Deck.h src/Models/Foundation.cpp src/Models/Foundation.h src/Models/Pile.cpp src/Models/Pile.h src/Models/Queue.cpp src/Models/Queue.h src/Models/Waste.cpp src/Models/Waste.h src/Views/Console/Models/BoardView.cpp
         src/Views/Console/Models/BoardView.h
         src/Views/Console/Models/StackView.h
-        src/Views/Console/Models/StackView.cpp src/Udm.cpp src/Udm.h)
+        src/Views/Console/Models/StackView.cpp
+        src/Views/Console/Models/SuitView.h
+        src/Views/Console/Models/SuitView.cpp
+        )

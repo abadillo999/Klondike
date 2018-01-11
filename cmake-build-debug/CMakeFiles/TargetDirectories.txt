@@ -1,3 +1,3 @@
 /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles/klondike.dir
+/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles/Solitario.dir

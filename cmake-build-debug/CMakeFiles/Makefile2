@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario
 CMAKE_BINARY_DIR = /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/klondike.dir
+# Target rules for target CMakeFiles/Solitario.dir
 
 # All Build rule for target.
-CMakeFiles/klondike.dir/all:
-	$(MAKE) -f CMakeFiles/klondike.dir/build.make CMakeFiles/klondike.dir/depend
-	$(MAKE) -f CMakeFiles/klondike.dir/build.make CMakeFiles/klondike.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles --progress-num= "Built target klondike"
-.PHONY : CMakeFiles/klondike.dir/all
+CMakeFiles/Solitario.dir/all:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/depend
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target Solitario"
+.PHONY : CMakeFiles/Solitario.dir/all
 
 # Include target in all.
-all: CMakeFiles/klondike.dir/all
+all: CMakeFiles/Solitario.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/klondike.dir/rule: cmake_check_build_system
+CMakeFiles/Solitario.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles 44
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Solitario.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/klondike.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alejandrobadillo/Desktop/ClionWorkspace/Solitario/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/klondike.dir/rule
+.PHONY : CMakeFiles/Solitario.dir/rule
 
 # Convenience name for target.
-klondike: CMakeFiles/klondike.dir/rule
+Solitario: CMakeFiles/Solitario.dir/rule
 
-.PHONY : klondike
-
-# clean rule for target.
-CMakeFiles/klondike.dir/clean:
-	$(MAKE) -f CMakeFiles/klondike.dir/build.make CMakeFiles/klondike.dir/clean
-.PHONY : CMakeFiles/klondike.dir/clean
+.PHONY : Solitario
 
 # clean rule for target.
-clean: CMakeFiles/klondike.dir/clean
+CMakeFiles/Solitario.dir/clean:
+	$(MAKE) -f CMakeFiles/Solitario.dir/build.make CMakeFiles/Solitario.dir/clean
+.PHONY : CMakeFiles/Solitario.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Solitario.dir/clean
 
 .PHONY : clean
 
