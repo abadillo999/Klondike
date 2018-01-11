@@ -20,6 +20,7 @@ namespace Views {
 
             for (int i= 0; i < cards.size(); ++i){
                 io.write("[");
+
                 if (cards[i]->isVisible()){
                     io.writeInt(cards[i]->getNumber());
                     Views::Console::SuitView suitView(cards[i]->getSuit());
