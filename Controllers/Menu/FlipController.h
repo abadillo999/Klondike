@@ -20,7 +20,7 @@ public:
 
 	FlipController* clone();
 
-	void accept(MenuControllerVisitor* menuControllerVisitor);
+	void accept(MenuControllerVisitor& menuControllerVisitor);
 
 	void visitBroker(Controllers::CommandBroker& broker);
 

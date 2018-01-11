@@ -15,20 +15,13 @@
 namespace Models{
 
 class Pile: public Stack {
-private:
-	int MAX_NUM_CARDS;
-	Queue* queue;
 public:
 	Pile(int maxNum);
     virtual ~Pile();
-	bool canSetCard(Card* card);
-	void setCard(Card* card);
-	Card* getTopCard();
-	Card* getCardValue();
 
+	bool canSetCard(Card* card);
 	bool canGetCard();
-	std::list<Card *> getCards();
-    bool isFull();
+
 
 };
 

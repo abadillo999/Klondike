@@ -28,7 +28,7 @@ public:
 	int writeMenu();
 	Controllers::CommandController* getCommandController(int option);
     void setCommandController(Controllers::CommandController* controller);
-
+	Models::Board& getBoard();
 
 };
 

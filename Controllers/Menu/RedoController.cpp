@@ -20,8 +20,8 @@ RedoController* RedoController::clone(){
 	return new RedoController(Controllers::Controller::game, this->getTitle());
 }
 
-void RedoController::accept(MenuControllerVisitor* menuControllerVisitor){
-	menuControllerVisitor->visit(this);
+void RedoController::accept(MenuControllerVisitor& menuControllerVisitor){
+	menuControllerVisitor.visit(*this);
 }
 
 void RedoController::visitBroker(Controllers::CommandBroker& broker){

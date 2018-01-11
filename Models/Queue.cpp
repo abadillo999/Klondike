@@ -53,9 +53,9 @@ bool Queue::isEmpty() {
 			return stack.empty();
 		}
 
-std::list<Card *> Queue::getCards(){
-		std::list<Card*> result;
-		for (int i = 0; i < stack.size(); ++i) {
+std::vector<Card *> Queue::getCards(){
+		std::vector<Card*> result;
+		for (int i = stack.size()-1; i >= 0; --i) {
 				result.push_back(stack.at(i));
 		}
 		return result;

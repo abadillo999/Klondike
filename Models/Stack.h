@@ -8,22 +8,35 @@
 #ifndef MODELS_STACK_H_
 #define MODELS_STACK_H_
 
-#include <list>
+#include <vector>
 #include "Card.h"
+#include "Queue.h"
 
 namespace Models {
 
 class Stack{
+protected:
+    int MAX_NUM_CARDS;
+    int NUM_TO_DRAW = 3;
+
+    Queue* queue;
+
 public:
 	Stack();
 	virtual ~Stack() = 0;
-	virtual bool canSetCard(Card* card) = 0;
-	virtual void setCard(Card* card) = 0;
+	void setCard(Card* card);
+    bool isFull();
+    void setCards(Queue queue);
+    Card* getTopCard();
+    Card* getCardValue();
+    std::vector<Card *> getCardValues();
+    Queue getCards();
+    Queue empty();
+
+
+    virtual bool canSetCard(Card* card) = 0;
 	virtual bool canGetCard() = 0;
-	virtual Card* getTopCard() = 0;
-    virtual Card* getCardValue() = 0;
-	virtual std::list<Card *> getCards() = 0;
-    virtual bool isFull() = 0;
+
 
 };
 

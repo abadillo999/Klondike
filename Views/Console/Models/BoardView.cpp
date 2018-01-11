@@ -3,24 +3,36 @@
 //
 
 #include "BoardView.h"
+#include "StackView.h"
 
-BoardView::BoardView(Models::Game &game): game(game) {
+namespace Views {
+    namespace Console{
 
-}
+        BoardView::BoardView(Models::Board &board): board(board) {
+        }
 
-BoardView::~BoardView() {
+        BoardView::~BoardView() {
 
-}
+        }
 
-void BoardView::write() {
-    Utils::IO &io = Utils::IO::getInstance();
+        void BoardView::write() {
 
-    io.write("Waste:");
-    io.writeInt(0);
-    game.getStack(0)->getCards();
+            Utils::IO &io = Utils::IO::getInstance();
 
-    for(int i = 1; i < game.getNumStacks(); i++){
-        game.getStack(i)->getCards();
-    };
+            int i = board.getNumStacks();
 
+
+            io.writeBreak("Waste:");
+            io.write("0--");
+            (new StackView(board.getStack(0)))->write();
+
+            io.writeBreak("Foundations:");
+            for(int i = 1; i < board.getNumStacks(); i++){
+                io.write(std::to_string(i)+"--");
+                Views::Console::StackView stackView(board.getStack(i));
+                stackView.write();
+            };
+
+        }
+    }
 }

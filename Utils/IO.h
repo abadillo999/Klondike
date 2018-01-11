@@ -25,6 +25,7 @@ public:
     int readInt();
     std::string readString();
     void write(std::string output);
+    void writeBreak(std::string output);
     void writeInt(int num);
 
 };

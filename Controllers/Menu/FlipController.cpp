@@ -8,19 +8,18 @@
 #include "FlipController.h"
 
 namespace Controllers {
+	FlipController::FlipController(Models::Game& game, std::string title): CommandController(game){
+		this->title = title;
+	}
 
-FlipController::FlipController(Models::Game& game, std::string title): CommandController(game){
-	this->title = title;
-
-}
 FlipController::~FlipController(){
 
 }
 FlipController* FlipController::clone(){
  return new FlipController(Controllers::Controller::game, this->getTitle());
 }
-void FlipController::accept(MenuControllerVisitor* menuControllerVisitor){
-	menuControllerVisitor->visit(this);
+void FlipController::accept(MenuControllerVisitor& menuControllerVisitor){
+	menuControllerVisitor.visit(*this);
 }
 
 void FlipController::visitBroker(Controllers::CommandBroker& broker){
@@ -30,11 +29,11 @@ void FlipController::visitBroker(Controllers::CommandBroker& broker){
 
 
 void FlipController::execute(){
-	//Controllers::Controller::flip();
+	game.flip();
 }
 
 void FlipController::undo(){
-	//controller.flipBack();
+    game.unflip();
 }
 
 } /* namespace Controllers */

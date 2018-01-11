@@ -21,7 +21,7 @@ ExitController* ExitController::clone(){
 }
 
 
-void ExitController::accept(MenuControllerVisitor* menuControllerVisitor) {
+void ExitController::accept(MenuControllerVisitor& menuControllerVisitor) {
 }
 
 void ExitController::visitBroker(Controllers::CommandBroker& broker){

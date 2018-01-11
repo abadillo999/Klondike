@@ -18,7 +18,6 @@ namespace Models {
     protected:
         int MAX_NUM_CARDS = 0;
         int NUM_TO_DRAW = 3;
-        std::string maString= "fd";
         Queue* queue;
 
 
@@ -29,7 +28,8 @@ namespace Models {
         void init();
         void shuffle();
         Card* getCard();
-        Queue* getCards();
+        Queue getCards();
+        void setCards(Queue queue);
         int getSize() const;
         bool isEmpty();
         bool fullfill(Queue* queue);

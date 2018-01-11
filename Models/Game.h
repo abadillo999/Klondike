@@ -32,12 +32,17 @@ public:
 
     int getNumStacks();
 
+	Models::Board &getBoard();
+    void flip();
+    void unflip();
+
+
 private:
-    void deleteCurrentGame();
 	Models::States state = Models::States::START;
 	int MAX_NUM_CARDS = 13;
-	Board* board;
-	Deck* deck;
+	Board board;
+	Deck *deck;
+
 };
 
 } /* namespace Models */

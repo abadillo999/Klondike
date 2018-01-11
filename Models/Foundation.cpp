@@ -6,8 +6,9 @@
 
 namespace Models {
 
-    Foundation::Foundation(int maxNum) :MAX_NUM_CARDS(maxNum){
-        queue = new Models::Queue();
+    Foundation::Foundation(int maxNum){
+        Stack::MAX_NUM_CARDS = maxNum;
+        Stack::queue = new Models::Queue();
     }
 
     Foundation::~Foundation() {
@@ -27,34 +28,13 @@ namespace Models {
             return false;
         }
     }
-    void Foundation::setCard(Card* card){
-        queue->setCardFront(card);
-    }
-
-    Card* Foundation::getCardValue(){
-        return queue->show();
-    }
-
-    bool Foundation::isFull(){
-        if(	queue->getSize()==MAX_NUM_CARDS){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
     bool Foundation::canGetCard(){
         return false;
     }
 
-    Card* Foundation::getTopCard() {
-        return queue->getCardFront();
-    }
 
-    std::list<Card *> Foundation::getCards(){
-        return queue->getCards();
 
-    }
+
 
 
 
