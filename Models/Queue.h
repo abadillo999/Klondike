@@ -33,7 +33,7 @@ public:
 	void setCardFront(Card* card);
 	int getSize() const;
 	bool isEmpty();
-	std::list<Card *> getCards();
+	std::vector<Card *> getCards();
 };
 
 } /* namespace Models */

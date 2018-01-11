@@ -10,8 +10,9 @@
 
 namespace Models {
 
-	Pile::Pile(int maxNum): MAX_NUM_CARDS(maxNum){
-		queue = new Models::Queue();
+	Pile::Pile(int maxNum){
+        Stack::MAX_NUM_CARDS = maxNum;
+		Stack::queue = new Models::Queue();
 	}
 
     Pile::~Pile() {
@@ -32,29 +33,10 @@ namespace Models {
 			}
 		}
 
-	void Pile::setCard(Card* card){
-		queue->setCardFront(card);
-	}
 
 
 	bool Pile::canGetCard(){
-		return true;
-	}
-
-	std::list<Card *> Pile::getCards(){
-		return queue->getCards();
-	}
-
-	Card *Pile::getTopCard() {
-		return queue->getCardFront();
-	}
-
-	Card *Pile::getCardValue() {
 		return queue->show();
-	}
-
-	bool Pile::isFull() {
-		return false;
 	}
 
 

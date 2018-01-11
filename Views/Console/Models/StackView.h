@@ -7,17 +7,25 @@
 
 #include "../../../Models/Stack.h"
 #include <list>
+#include <vector>
 #include "../../../Utils/IO.h"
+#include "SuitView.h"
 
-class StackView {
-private:
-    Models::Stack* stack;
-public:
-    StackView(Models::Stack* stack);
-    virtual ~StackView();
-    void write();
+namespace Views {
+    namespace Console {
+        class StackView {
+        private:
+            Models::Stack *stack;
+        public:
+            StackView(Models::Stack *stack);
 
-};
+            virtual ~StackView();
+
+            void write();
+
+        };
+    }
+}
 
 
 #endif //KLONDIKE_STACKVIEW_H

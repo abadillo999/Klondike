@@ -25,7 +25,7 @@ IO& IO::getInstance(){
         while (!(std::cin >> value)) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            this->write("Please write an Integer.");
+            this->writeBreak("Please write an Integer.");
         }
         return value;
     }
@@ -35,18 +35,25 @@ IO& IO::getInstance(){
         while (!(std::cin >> input)) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            this->write("Please write a String.");
+            this->writeBreak("Please write a String.");
         }
 	return input;
     }
 
     void IO::write(std::string string){
+        std::cout << string;
+    }
+
+    void IO::writeBreak(std::string string) {
         std::cout << string << std::endl;
+
     }
 
 	void IO::writeInt(int num) {
 		std::cout<<num	;
 	}
+
+
 
 
 } /* namespace Utils */

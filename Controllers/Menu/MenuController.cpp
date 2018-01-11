@@ -8,12 +8,12 @@
 #include "MenuController.h"
 
 namespace Controllers {
-
-MenuController::MenuController(Models::Game& game): game(game){
+	MenuController::MenuController(Models::Game& game): game(game){
 		broker = Controllers::CommandBroker();
 		menu = new Controllers::CommandMenu(game, broker);
 
 }
+
 MenuController:: ~MenuController(){
 
 }
@@ -28,6 +28,13 @@ Controllers::CommandController* MenuController::getCommandController(int option)
 }
 
 void MenuController::setCommandController(Controllers::CommandController* controller){
-	controller->visitBroker(broker);
+    Utils::IO &io = Utils::IO::getInstance();
+
+
+    controller->visitBroker(broker);
 }
+
+    Models::Board &MenuController::getBoard() {
+        return game.getBoard();
+    }
 } /* namespace Controllers */

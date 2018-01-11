@@ -15,9 +15,33 @@ MoveView::MoveView() {
 
 }
 
-void MoveView::interact(Controllers::MoveController& controller){
+void MoveView::interact(Controllers::MoveController& moveController){
     Utils::IO &io = Utils::IO::getInstance();
-    io.write("cabesa");
+    moveController.getNumStacks();
+
+    int origin;
+    int destination;
+
+    do {
+        Views::Console::LimitedIntDialogView limitedInt("Chose origin:", 1, moveController.getNumStacks());
+
+        origin = limitedInt.read();
+
+    } while (!moveController.canTakeCard(origin));
+
+    do {
+        Views::Console::LimitedIntDialogView limitedInt("Chose destination:", 1, moveController.getNumStacks());
+
+        destination = limitedInt.read();
+
+    } while (!moveController.canMoveCardTo(origin, destination));
+
+    moveController.setMove(origin, destination);
+
+
+    io.write("Exit Menu!");
+
 }
 }
+
 } /* namespace Views */

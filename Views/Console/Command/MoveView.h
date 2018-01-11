@@ -10,11 +10,15 @@
 
 #include "../../../Controllers/Menu/MoveController.h"
 #include "../../../Utils/IO.h"
+#include "../../../Views/Console/Utils/LimitedIntDialogView.h"
+
 
 namespace Views {
 namespace Console{
 
 class MoveView{
+private:
+    Controllers::MoveController *moveController;
 public:
 	MoveView();
 	virtual ~MoveView() = default;

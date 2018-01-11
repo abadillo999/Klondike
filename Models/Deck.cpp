@@ -29,10 +29,10 @@ namespace Models {
         return queue->getCardBack();
     }
 
-    Queue* Deck::getCards() {
-        Queue* cards;
+    Queue Deck::getCards() {
+        Queue cards;
         for(int i=0; i<NUM_TO_DRAW ; i++){
-            cards->setCardFront(queue->getCardBack());
+            cards.setCardBack(queue->getCardFront());
         }
         return cards;
     }
@@ -51,6 +51,14 @@ namespace Models {
         }else {
             return false;
         }
+
+    }
+
+    void Deck::setCards(Queue queue) {
+
+        do {
+            this->queue->setCardFront(queue.getCardFront());
+        }while(!queue.isEmpty());
 
     }
 

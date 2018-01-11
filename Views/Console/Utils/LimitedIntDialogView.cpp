@@ -18,7 +18,7 @@ LimitedIntDialogView::LimitedIntDialogView(std::string title, int min, int max):
 void LimitedIntDialogView::write(){
 	Utils::IO &io = Utils::IO::getInstance();
 
-	io.write(title);
+	io.writeBreak(title);
 }
 
 int LimitedIntDialogView::read(){

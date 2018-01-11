@@ -6,6 +6,7 @@
  */
 
 #include "MenuView.h"
+#include "Models/BoardView.h"
 
 namespace Views {
 namespace Console{
@@ -27,7 +28,8 @@ void MenuView::interact(Controllers::MenuController& menuController){
 	int option = 0;
 
 	do {
-
+        Views::Console::BoardView  boardView( menuController.getBoard());
+        boardView.write();
         options = menuController.writeMenu();
         Views::Console::LimitedIntDialogView limitedInt("Chose an option :", 1, options);
 
@@ -36,38 +38,34 @@ void MenuView::interact(Controllers::MenuController& menuController){
 
         if (controller != nullptr){
 
-            controller->accept(this);
+            controller->accept(*this);
 
 			menuController.setCommandController(controller);
+
 
 		}
 
 
 		} while (controller != nullptr );
-	io.write("Exit Menu!");
+	io.writeBreak("Exit Menu!");
 
 }
 
 
-void MenuView::visit(Controllers::MoveController* moveController){
-    Utils::IO &io = Utils::IO::getInstance();
-    io.write("movement");
-
-	//this->moveView.interact(moveController);
+void MenuView::visit(Controllers::MoveController& moveController){
+	this->moveView.interact(moveController);
 }
 
-void MenuView::visit(Controllers::FlipController* flipController){
-    Utils::IO &io = Utils::IO::getInstance();
-    io.write("flipment");
-	//this->flipView.interact(flipController);
+void MenuView::visit(Controllers::FlipController& flipController){
+	this->flipView.interact(flipController);
 }
 
-void MenuView::visit(Controllers::UndoController* undoController){
-	//this->undoView.interact(undoController);
+void MenuView::visit(Controllers::UndoController& undoController){
+	this->undoView.interact(undoController);
 }
 
-void MenuView::visit(Controllers::RedoController* redoController){
-	//this->redoView.interact(redoController);
+void MenuView::visit(Controllers::RedoController& redoController){
+	this->redoView.interact(redoController);
 }
 
 } /* n1

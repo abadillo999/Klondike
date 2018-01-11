@@ -10,8 +10,8 @@
 
 namespace Models {
 
-Game::Game() {
-    deck = new Deck(MAX_NUM_CARDS);
+Game::Game():board(MAX_NUM_CARDS){
+
 }
 
 Game::~Game() {
@@ -21,44 +21,51 @@ void Game::init(){
     Utils::IO &io = Utils::IO::getInstance();
 
 
-    deck->init();
 
-    board = new Board(deck, MAX_NUM_CARDS);
     state = Models::States::IN_GAME;
 
 }
 
-void Game::deleteCurrentGame(){
-    delete deck;
-    deck = nullptr;
-	delete board;
-    board = nullptr;
-    state = Models::States::START;
-	}
+
 
     void Game::setNewState(Models::States NewState){
         this->state = NewState;
 }
 
     bool Game::checkKlondike(){
-        return board->checkKlondike();
+        return board.checkKlondike();
 }
     Models::States Game::getState(){
         return state;
 }
 
     void Game::moveCard(int origin, int destination){
-        board->move(origin, destination);
+        board.move(origin, destination);
     }
 
     Stack* Game::getStack(int position) {
-        return board->getStack(position);
+        return board.getStack(position);
     }
 
     int Game::getNumStacks() {
-        return board->getNumStacks();
+        return board.getNumStacks();
 
     }
+
+    void Game::flip(){
+        board.flip();
+    }
+
+    void Game::unflip() {
+        board.unflip();
+
+    }
+
+    Models::Board &Game::getBoard() {
+        return this->board;
+    }
+
+
 
 
 }

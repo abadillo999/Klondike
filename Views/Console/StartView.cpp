@@ -21,9 +21,9 @@ StartView::~StartView() {
 }
 void StartView::interact(Controllers::StartController& startController){
     Utils::IO &io = Utils::IO::getInstance();
-    io.write("Loading...");
+    io.writeBreak("Loading...");
     startController.init();
-    io.write("Loaded");
+    io.writeBreak("Loaded");
 
 
 }

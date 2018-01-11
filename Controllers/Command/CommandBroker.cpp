@@ -5,10 +5,11 @@ namespace Controllers {
 
 CommandBroker::CommandBroker() {
 	pointer = 0;
+    doneCommandList = std::vector<Controllers::CommandController*>();
 }
 
 bool CommandBroker::canUndo(){
-	return (doneCommandList.size() != 0 || pointer != 0);
+	return (pointer > 0);
 }
 
 bool CommandBroker::canDo(){
@@ -17,8 +18,7 @@ bool CommandBroker::canDo(){
 
 
 void CommandBroker::setCommand(Controllers::MoveController* command){
-	Utils::IO &io = Utils::IO::getInstance();
-    io.write("broooker");
+
 	command->execute();
 	doneCommandList[pointer] = command;
 	pointer++;
@@ -26,8 +26,9 @@ void CommandBroker::setCommand(Controllers::MoveController* command){
 
 }
 void CommandBroker::setCommand(Controllers::FlipController* command){
+
 	command->execute();
-	doneCommandList[pointer] = command;
+	doneCommandList.push_back(command);
 	pointer++;
 
 }
@@ -37,8 +38,8 @@ void CommandBroker::setCommand(Controllers::RedoController* command){
 
 }
 void CommandBroker::setCommand(Controllers::UndoController* command){
-	doneCommandList[pointer]->undo();
-	pointer--;
+    pointer--;
+    doneCommandList[pointer]->undo();
 
 }
 }

@@ -21,8 +21,8 @@ UndoController* UndoController::clone(){
 	return new UndoController(Controllers::Controller::game, this->title);
 }
 
-void UndoController::accept(MenuControllerVisitor* menuControllerVisitor){
-	menuControllerVisitor->visit(this);
+void UndoController::accept(MenuControllerVisitor& menuControllerVisitor){
+	menuControllerVisitor.visit(*this);
 }
 
 

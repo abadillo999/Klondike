@@ -36,10 +36,10 @@ public:
 	void interact(Controllers::MenuController& menuController);
 
 
-	void visit(Controllers::MoveController* controller);
-	void visit(Controllers::FlipController* flipController);
-	void visit(Controllers::UndoController* undoController);
-	void visit(Controllers::RedoController* redoController);
+	void visit(Controllers::MoveController& moveController);
+	void visit(Controllers::FlipController& flipController);
+	void visit(Controllers::UndoController& undoController);
+	void visit(Controllers::RedoController& redoController);
 };
 
 } /* namespace Views */

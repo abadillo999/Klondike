@@ -43,7 +43,7 @@ int CommandMenu::writeMenu(){
 
 	this->updateCommands();
 	for (int i= 0; i < availableCommandList.size(); i++){
-		io.write(std::to_string(i+1)+" - "+availableCommandList[i]->getTitle());
+		io.writeBreak(std::to_string(i+1)+" - "+availableCommandList[i]->getTitle());
 	}
 
 

@@ -12,21 +12,15 @@
 namespace Models {
 
     class Foundation: public Stack {
-    private:
-        int MAX_NUM_CARDS;
-        Queue* queue;
+
     public:
         Foundation(int maxNum);
         virtual ~Foundation();
-        bool isFull();
 
         bool canSetCard(Card* card);
         bool canGetCard();
 
-        void setCard(Card* card);
-        Card* getTopCard();
-        Card* getCardValue();
-        std::list<Card *> getCards();
+
 
     };
 

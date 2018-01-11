@@ -7,9 +7,10 @@
 
 namespace Models {
 
-    Board::Board(Deck* deck, int maxNum) : deck(deck), MAX_NUM_CARDS(maxNum) {
+    Board::Board(int maxNum) : deck(maxNum), MAX_NUM_CARDS(maxNum) {
         Utils::IO &io = Utils::IO::getInstance();
-        stacks = std::vector<Stack*>(11);
+        deck.init();
+        stacks = std::vector<Stack*>(12);
 
         Card* card;
         Models::Waste* waste = new Waste();
@@ -20,7 +21,7 @@ namespace Models {
             stacks[a] = pile;
 
             for (int b = 1 ;b <= a; b++){
-                card = this->deck->getCard();
+                card = this->deck.getCard();
                 if(a == b){
                     card->see(true);
                 }else{
@@ -29,8 +30,8 @@ namespace Models {
             }
 
         }
-        Foundation* foundation = new Foundation(MAX_NUM_CARDS);
         for(int i = NUM_PILES+1 ; i <= (NUM_PILES + NUM_FOUNDATIONS); i++){
+            Foundation* foundation = new Foundation(MAX_NUM_CARDS);
             stacks[i] = foundation;
         }
     }
@@ -60,6 +61,18 @@ namespace Models {
 
     int Board::getNumStacks() {
         return stacks.size();
+    }
+
+    void Board::flip() {
+
+        stacks[0]->setCards(deck.getCards());
+
+    }
+
+    void Board::unflip() {
+
+        deck.setCards(stacks[0]->getCards());
+
     }
 
 

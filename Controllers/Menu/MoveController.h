@@ -23,10 +23,11 @@ public:
 
 	MoveController* clone();
 
-	void accept(MenuControllerVisitor* menuControllerVisitor);
+	void accept(MenuControllerVisitor& menuControllerVisitor);
 
 	void visitBroker(Controllers::CommandBroker& broker);
 
+	int getNumStacks();
 	bool canTakeCard(int position);
 	bool canMoveCardTo(int Origin, int destination);
 	void setMove(int Origin, int Destination);

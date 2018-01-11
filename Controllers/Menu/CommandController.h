@@ -26,7 +26,7 @@ public:
 
 	virtual CommandController* clone()=0;
 
-	virtual void accept(MenuControllerVisitor* menuControllerVisitor)=0;
+	virtual void accept(MenuControllerVisitor& menuControllerVisitor)=0;
 
 	std::string getTitle();
 

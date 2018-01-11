@@ -17,7 +17,7 @@ namespace Models {
 
     class Board {
     public:
-        Board(Deck* deck, int numCards);
+        Board(int numCards);
         virtual ~Board();
         bool checkKlondike();
         Stack* getStack(int position);;
@@ -25,8 +25,11 @@ namespace Models {
 
         int getNumStacks();
 
+        void flip();
+        void unflip();
+
     private:
-        Deck* deck;
+        Deck deck;
         std::vector<Stack*> stacks;
         int MAX_NUM_CARDS;
         int NUM_FOUNDATIONS = 4;
